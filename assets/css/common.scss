@@ -1,0 +1,176 @@
+@font-face {
+  font-family: "bit";
+  src: url("../fonts/DNFBitBit-Regular.woff2") format("woff2"),
+    url("../fonts/DNFBitBit-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PretenBold";
+  src: url("../fonts/Pretendard-Bold.woff2") format("woff2"),
+    url("../fonts/Pretendard-Bold.woff") format("woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "PretenRegular";
+  src: url("../fonts/Pretendard-Regular.woff2") format("woff2"),
+    url("../fonts/Pretendard-Regular.woff") format("woff");
+  font-weight: 400;
+}
+
+strong,
+.characterName,
+.category {
+  font-family: PretenBold;
+  font-weight: 700;
+}
+.desc,
+p {
+  font-family: PretenRegular;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+body {
+  .header {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    .headerArea {
+      max-width: 1920px;
+      padding: 10px 50px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      .headerLogo {
+        width: 100%;
+        h1 {
+          a {
+            display: block;
+            // width: 150px;
+            // height: 120px;
+            width: 150px;
+            height: 120px;
+            background-image: url("/assets/image/logo/mainlogo1.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            overflow: hidden;
+            font-size: 0;
+            line-height: 0;
+            text-indent: -9999px;
+          }
+        }
+      }
+      .gnb {
+        display: block;
+        font-size: 3rem;
+        .gnbList {
+          display: flex;
+          .gnbItem {
+            margin-left: 20px;
+            padding: 30px 0;
+            a {
+              font-family: bit;
+              font-weight: normal;
+              font-size: 2rem;
+              color: #fff;
+              text-decoration: none;
+              transition: 2s;
+              &:hover {
+                color: red;
+              }
+            }
+          }
+        }
+      }
+    }
+    .blue {
+      transition: 0.5s;
+      background-color: rgb(0, 0, 125);
+    }
+  }
+  footer {
+    width: 100%;
+    background-color: #333;
+    .footerArea {
+      padding: 40px 100px 0;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      .footerLogoBox {
+        width: 50%;
+        .footerLogo {
+          position: relative;
+          width: 80%;
+          margin: 0 auto;
+          a {
+            display: block;
+            width: 150px;
+            height: 120px;
+            background-image: url("/assets/image/logo/mainlogo1.png");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+          }
+        }
+      }
+      .company {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .companyList {
+          display: flex;
+          justify-content: space-between;
+          .companyItem {
+            width: 42%;
+            margin: 0 auto;
+            img {
+              display: block;
+              margin: 0 auto;
+              width: 100%;
+              max-width: 150px;
+              height: 100%;
+              object-fit: contain;
+            }
+          }
+        }
+      }
+      .upBtn {
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+        width: 40px;
+        height: 40px;
+        background-image: url("/assets/image/footerjs/itembox.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        cursor: pointer;
+        .upBtnArrow {
+          color: red;
+          font-size: 40px;
+          position: absolute;
+          height: 90%;
+          transition: 1s;
+          transform: translateY(-100%);
+          opacity: 0;
+        }
+        &:hover {
+          .upBtnArrow {
+            opacity: 1;
+          }
+        }
+      }
+    }
+    .copyright {
+      color: white;
+      text-align: center;
+      display: block;
+      padding-top: 40px;
+      padding-bottom: 20px;
+    }
+  }
+}

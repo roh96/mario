@@ -1,0 +1,213 @@
+// @import "/assets/css/common.css";
+@import "./common.css";
+
+h2 {
+  font-family: bit;
+  font-size: 5rem;
+  color: white;
+}
+
+h3,
+h4,
+dt {
+  font-family: PretenBold;
+  font-weight: 700;
+  color: red;
+}
+p,
+dd {
+  font-family: PretenRegular;
+  font-weight: 400;
+  line-height: 1.5;
+  color: white;
+}
+
+@keyframes scrollBig {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0.7;
+    transform: scale(1.2);
+  }
+}
+
+.content {
+  width: 100%;
+  .subMain {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      object-fit: cover;
+      z-index: -1;
+    }
+    .pageName {
+      display: inline-block;
+      position: absolute;
+      left: 50%;
+      bottom: 40%;
+      transform: translate(-50%, -50%);
+    }
+    .scrollBtn {
+      position: absolute;
+      left: 50%;
+      bottom: 20%;
+      transform: translateX(-50%);
+      button {
+        border: 0;
+        background-color: transparent;
+        display: block;
+        font-size: 2rem;
+        color: white;
+        animation: scrollBig 1s infinite alternate;
+        cursor: pointer;
+      }
+    }
+  }
+  .character {
+    background-color: rgba(0, 0, 0, 0.9);
+    // width: 100%;
+    padding: 50px;
+    max-width: 1920px;
+    margin: 0 auto;
+    .mario {
+      position: relative;
+      .marioPng {
+        position: absolute;
+        top: -50px;
+        left: 100px;
+        width: 20%;
+        img {
+          width: 250px;
+        }
+      }
+      .marioTxt {
+        float: right;
+        width: 60%;
+        h3 {
+          font-size: 3.75rem;
+          padding-bottom: 30px;
+        }
+        p {
+          font-size: 1.25rem;
+        }
+      }
+      .marioImg {
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        clear: both;
+        width: 100%;
+        li {
+          padding-top: 200px;
+          padding-bottom: 100px;
+          width: 32%;
+          height: 300px;
+          text-align: center;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+    .peach {
+      position: relative;
+      .peachPng {
+        position: absolute;
+        top: -50px;
+        right: 100px;
+        width: 15%;
+        img {
+          width: 250px;
+        }
+      }
+      .peachTxt {
+        width: 60%;
+        h3 {
+          font-size: 3.75rem;
+          padding-bottom: 30px;
+        }
+        p {
+          font-size: 1.25rem;
+        }
+      }
+      .peachImg {
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        clear: both;
+        width: 100%;
+        li {
+          padding-top: 300px;
+          width: 32%;
+          height: 300px;
+          text-align: center;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+    .subCharacter {
+      width: 100%;
+      padding-top: 100px;
+      dt {
+        font-size: 2.5rem;
+        padding-bottom: 20px;
+      }
+      dd {
+        font-size: 1.125rem;
+        display: block;
+        padding-bottom: 50px;
+      }
+      .subCharacterList {
+        display: flex;
+        flex-wrap: wrap;
+        li {
+          width: 48%;
+          display: flex;
+          justify-content: space-between;
+          dl {
+            width: 48%;
+          }
+          div {
+            width: 48%;
+            height: 400px;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: contain;
+            }
+          }
+        }
+      }
+    }
+    .others {
+      width: 100%;
+      padding: 100px 0;
+      .othersCharacter {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        li {
+          width: 32%;
+          height: 300px;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,153 @@
+// @import "/assets/css/common.css";
+@import "./common.css";
+
+h2 {
+  font-family: bit;
+  font-size: 5rem;
+  color: white;
+}
+
+h3,
+h4 {
+  font-family: PretenBold;
+  font-weight: 700;
+}
+
+section {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@keyframes scrollBig {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0.7;
+    transform: scale(1.2);
+  }
+}
+
+body {
+  .wrap {
+    .content {
+      width: 100%;
+      .subMain {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        img {
+          width: 100%;
+          height: 100%;
+          position: fixed;
+          object-fit: cover;
+          z-index: -1;
+        }
+        .pageName {
+          display: inline-block;
+          position: absolute;
+          left: 50%;
+          bottom: 40%;
+          transform: translate(-50%, -50%);
+        }
+        .scrollBtn {
+          position: absolute;
+          left: 50%;
+          bottom: 20%;
+          transform: translateX(-50%);
+          button {
+            border: 0;
+            background-color: transparent;
+            display: block;
+            font-size: 2rem;
+            color: white;
+            animation: scrollBig 1s infinite alternate;
+            cursor: pointer;
+          }
+        }
+      }
+      .trailer {
+        max-width: 1920px;
+        margin: 0 auto;
+        padding: 50px 50px 50px;
+        color: white;
+        h3 {
+          position: relative;
+          padding-bottom: 50px;
+          &:before {
+            content: "";
+            position: absolute;
+            top: 70px;
+            left: 0;
+            border: 2px solid red;
+            width: 80px;
+          }
+        }
+        .swiperWrap {
+          width: 100%;
+          // height: 800px;
+          //위 큰스와이퍼
+          .mySwiper2 {
+            height: 80%;
+            width: 100%;
+            .swiper-wrapper {
+              .swiper-slide {
+                // text-align: center;
+                // font-size: 18px;
+                // background: #fff;
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+                // background-size: cover;
+                // background-position: center;
+                .videobox {
+                  position: relative;
+                  width: 100%;
+                  padding-bottom: 56.25%;
+                  iframe {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                  }
+                }
+                // img {
+                //   display: block;
+                //   width: 100%;
+                //   height: 100%;
+                //   object-fit: cover;
+                // }
+              }
+            }
+          }
+          //아래작은스와이퍼
+          .mySwiper {
+            height: 200px;
+            box-sizing: border-box;
+            padding: 15px 0;
+            .swiper-wrapper {
+              display: flex;
+              justify-content: space-between;
+              .swiper-slide {
+                // width: 16%;
+                height: 100%;
+                background-size: cover;
+                background-position: center;
+                cursor: pointer;
+
+                img {
+                  display: block;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                }
+              }
+            }
+          }
+        }
+        .officialTrailer {
+          font-size: 3.25rem;
+        }
+      }
+    }
+  }
+}
