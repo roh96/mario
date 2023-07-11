@@ -47,7 +47,7 @@ body .header .headerArea .headerLogo h1 a {
   display: block;
   width: 150px;
   height: 120px;
-  background-image: url("../image/logo/mainlogo1.png");
+  background-image: url("/assets/image/logo/mainlogo1.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -105,7 +105,7 @@ body footer .footerArea .footerLogoBox .footerLogo a {
   display: block;
   width: 150px;
   height: 120px;
-  background-image: url("../image/logo/mainlogo1.png");
+  background-image: url("/assets/image/logo/mainlogo1.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -139,7 +139,7 @@ body footer .footerArea .upBtn {
   right: 50px;
   width: 40px;
   height: 40px;
-  background-image: url("../image/footerjs/itembox.png");
+  background-image: url("/assets/image/footerjs/itembox.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
