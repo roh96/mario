@@ -32,6 +32,17 @@ $(document).ready(function () {
     slidesPerView: 6,
     freeMode: true,
     watchSlidesProgress: true,
+    breakpoints: {
+      720: {
+        slidesPerView: 4,
+      },
+      1024: {
+        slidesPerView: 5,
+      },
+      1280: {
+        slidesPerView: 6,
+      },
+    },
   });
   var swiper2 = new Swiper(".mySwiper2", {
     effect: "fade",
