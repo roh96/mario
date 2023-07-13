@@ -1,0 +1,284 @@
+@media (min-width: 1024px) and (max-width: 1279px) {
+  body {
+    .header {
+      position: fixed;
+      width: 100%;
+      z-index: 99;
+      .headerArea {
+        padding: 0px 50px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        .headerLogo {
+          width: 100%;
+          h1 {
+            a {
+              display: block;
+              width: 80px;
+              height: 80px;
+              background-image: url("../image/logo/mainlogo1.png");
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-position: center;
+              overflow: hidden;
+              font-size: 0;
+              line-height: 0;
+              text-indent: -9999px;
+            }
+          }
+        }
+        .gnb {
+          display: block;
+          .gnbList {
+            display: flex;
+            .gnbItem {
+              margin-left: 20px;
+              padding: 30px 0;
+              a {
+                font-family: bit;
+                font-weight: normal;
+                font-size: 1.5rem;
+                color: #fff;
+                text-decoration: none;
+                transition: 2s;
+                &:hover {
+                  color: red;
+                }
+              }
+            }
+          }
+        }
+      }
+      .blue {
+        transition: 0.5s;
+        background-color: rgb(0, 0, 125);
+      }
+    }
+    footer {
+      width: 100%;
+      background-color: #333;
+      .footerArea {
+        padding: 40px 100px 0;
+        margin: 0 auto;
+        max-width: 1920px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        .footerLogoBox {
+          width: 50%;
+          .footerLogo {
+            position: relative;
+            width: 80%;
+            margin: 0 auto;
+            a {
+              display: block;
+              width: 80px;
+              height: 80px;
+              background-image: url("../image/logo/mainlogo1.png");
+              background-position: center;
+              background-size: contain;
+              background-repeat: no-repeat;
+            }
+          }
+        }
+        .company {
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          .companyList {
+            display: flex;
+            justify-content: space-between;
+            .companyItem {
+              width: 42%;
+              margin: 0 auto;
+              img {
+                display: block;
+                margin: 0 auto;
+                width: 100%;
+                max-width: 120px;
+                height: 100%;
+                object-fit: contain;
+              }
+            }
+          }
+        }
+        .upBtn {
+          position: fixed;
+          bottom: 50px;
+          right: 50px;
+          width: 40px;
+          height: 40px;
+          background-image: url("../image/footerjs/itembox.png");
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: contain;
+          cursor: pointer;
+          .upBtnArrow {
+            color: red;
+            font-size: 40px;
+            position: absolute;
+            height: 90%;
+            transition: 1s;
+            transform: translateY(-100%);
+            opacity: 0;
+          }
+          &:hover {
+            .upBtnArrow {
+              opacity: 1;
+            }
+          }
+        }
+      }
+      .copyright {
+        color: white;
+        text-align: center;
+        display: block;
+        padding-top: 40px;
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
+@media (min-width: 720px) and (max-width: 1023px) {
+  body {
+    .header {
+      position: fixed;
+      width: 100%;
+      z-index: 99;
+      .headerArea {
+        padding: 0px 50px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        .headerLogo {
+          width: 100%;
+          h1 {
+            a {
+              display: block;
+              width: 80px;
+              height: 80px;
+              background-image: url("../image/logo/mainlogo1.png");
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-position: center;
+              overflow: hidden;
+              font-size: 0;
+              line-height: 0;
+              text-indent: -9999px;
+            }
+          }
+        }
+        .gnb {
+          display: block;
+          .gnbList {
+            display: flex;
+            .gnbItem {
+              margin-left: 20px;
+              padding: 30px 0;
+              a {
+                font-family: bit;
+                font-weight: normal;
+                font-size: 1.5rem;
+                color: #fff;
+                text-decoration: none;
+                transition: 2s;
+                &:hover {
+                  color: red;
+                }
+              }
+            }
+          }
+        }
+      }
+      .blue {
+        transition: 0.5s;
+        background-color: rgb(0, 0, 125);
+      }
+    }
+    footer {
+      width: 100%;
+      background-color: #333;
+      .footerArea {
+        padding: 40px 50px 0;
+        margin: 0 auto;
+        max-width: 1920px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        .footerLogoBox {
+          width: 50%;
+          .footerLogo {
+            position: relative;
+            width: 80%;
+            margin: 0 auto;
+            a {
+              display: block;
+              width: 100px;
+              height: 100px;
+              background-image: url("../image/logo/mainlogo1.png");
+              background-position: center;
+              background-size: contain;
+              background-repeat: no-repeat;
+            }
+          }
+        }
+        .company {
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          .companyList {
+            display: flex;
+            justify-content: space-between;
+            .companyItem {
+              width: 42%;
+              margin: 0 auto;
+              img {
+                display: block;
+                margin: 0 auto;
+                width: 100%;
+                max-width: 100px;
+                height: 100%;
+                object-fit: contain;
+              }
+            }
+          }
+        }
+        .upBtn {
+          position: fixed;
+          bottom: 50px;
+          right: 50px;
+          width: 40px;
+          height: 40px;
+          background-image: url("../image/footerjs/itembox.png");
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: contain;
+          cursor: pointer;
+          .upBtnArrow {
+            color: red;
+            font-size: 40px;
+            position: absolute;
+            height: 90%;
+            transition: 1s;
+            transform: translateY(-100%);
+            opacity: 0;
+          }
+          &:hover {
+            .upBtnArrow {
+              opacity: 1;
+            }
+          }
+        }
+      }
+      .copyright {
+        color: white;
+        text-align: center;
+        display: block;
+        padding-top: 40px;
+        padding-bottom: 20px;
+      }
+    }
+  }
+}

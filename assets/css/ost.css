@@ -11,10 +11,6 @@ h4 {
   font-weight: 700;
 }
 
-section {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
 @keyframes scrollBig {
   0% {
     opacity: 1;
@@ -63,18 +59,21 @@ body .wrap .content .subMain .scrollBtn button {
   animation: scrollBig 1s infinite alternate;
   cursor: pointer;
 }
-body .wrap .content .ost {
+body .wrap .content .sectionWrap {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+body .wrap .content .sectionWrap .ost {
   max-width: 1920px;
   margin: 0 auto;
   padding: 50px 50px 0;
   color: white;
 }
-body .wrap .content .ost h3 {
+body .wrap .content .sectionWrap .ost h3 {
   position: relative;
   padding-bottom: 50px;
   font-size: 3.25rem;
 }
-body .wrap .content .ost h3:before {
+body .wrap .content .sectionWrap .ost h3:before {
   content: "";
   position: absolute;
   top: 70px;
@@ -82,77 +81,646 @@ body .wrap .content .ost h3:before {
   border: 2px solid red;
   width: 80px;
 }
-body .wrap .content .ost .ostContainer {
+body .wrap .content .sectionWrap .ost .ostContainer {
   padding-bottom: 50px;
 }
-body .wrap .content .ost .ostContainer .upperOstList {
+body .wrap .content .sectionWrap .ost .ostContainer .upperOstList {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-body .wrap .content .ost .ostContainer .upperOstList li {
+body .wrap .content .sectionWrap .ost .ostContainer .upperOstList li {
   display: block;
   width: 49%;
 }
-body .wrap .content .ost .ostContainer .upperOstList li .ostVideo {
+body .wrap .content .sectionWrap .ost .ostContainer .upperOstList li .ostVideo {
   width: 100%;
   height: 500px;
 }
-body .wrap .content .ost .ostContainer .upperOstList li .ostVideo iframe {
+body .wrap .content .sectionWrap .ost .ostContainer .upperOstList li .ostVideo iframe {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-body .wrap .content .ost .ostContainer .upperOstList li .ostTxtBox {
+body .wrap .content .sectionWrap .ost .ostContainer .upperOstList li .ostTxtBox {
   width: 100%;
   padding-bottom: 30px;
 }
-body .wrap .content .ost .ostContainer .upperOstList li .ostTxtBox .ostTitle {
+body .wrap .content .sectionWrap .ost .ostContainer .upperOstList li .ostTxtBox .ostTitle {
   width: 100%;
   padding-top: 30px;
   font-size: 1.875rem;
   line-height: 1.5;
 }
-body .wrap .content .ost .ostContainer .upperOstList li .ostTxtBox p {
+body .wrap .content .sectionWrap .ost .ostContainer .upperOstList li .ostTxtBox p {
   width: 100%;
   padding-top: 30px;
   font-size: 1.25rem;
   word-break: break-all;
 }
-body .wrap .content .ost .ostContainer .lowerOstList {
+body .wrap .content .sectionWrap .ost .ostContainer .lowerOstList {
   padding-top: 100px;
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-body .wrap .content .ost .ostContainer .lowerOstList li {
+body .wrap .content .sectionWrap .ost .ostContainer .lowerOstList li {
   display: block;
   width: 49%;
 }
-body .wrap .content .ost .ostContainer .lowerOstList li .ostVideo {
+body .wrap .content .sectionWrap .ost .ostContainer .lowerOstList li .ostVideo {
   width: 100%;
   height: 500px;
 }
-body .wrap .content .ost .ostContainer .lowerOstList li .ostVideo iframe {
+body .wrap .content .sectionWrap .ost .ostContainer .lowerOstList li .ostVideo iframe {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-body .wrap .content .ost .ostContainer .lowerOstList li .ostTxtBox {
+body .wrap .content .sectionWrap .ost .ostContainer .lowerOstList li .ostTxtBox {
   width: 100%;
   padding-bottom: 30px;
 }
-body .wrap .content .ost .ostContainer .lowerOstList li .ostTxtBox .ostTitle {
+body .wrap .content .sectionWrap .ost .ostContainer .lowerOstList li .ostTxtBox .ostTitle {
   width: 100%;
   padding-top: 30px;
   font-size: 1.875rem;
   line-height: 1.5;
 }
-body .wrap .content .ost .ostContainer .lowerOstList li .ostTxtBox p {
+body .wrap .content .sectionWrap .ost .ostContainer .lowerOstList li .ostTxtBox p {
   width: 100%;
   padding-top: 30px;
   font-size: 1.25rem;
-  word-break: break-all;
+  word-break: keep-all;
+}
+
+@media (min-width: 1120px) and (max-width: 1279px) {
+  h2 {
+    font-size: 4.125rem;
+  }
+  body .wrap .content {
+    width: 100%;
+  }
+  body .wrap .content .subMain {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  body .wrap .content .subMain img {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    -o-object-fit: cover;
+       object-fit: cover;
+    z-index: -1;
+  }
+  body .wrap .content .subMain .pageName {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    bottom: 40%;
+    transform: translate(-50%, -50%);
+  }
+  body .wrap .content .subMain .scrollBtn {
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translateX(-50%);
+  }
+  body .wrap .content .subMain .scrollBtn button {
+    border: 0;
+    background-color: transparent;
+    display: block;
+    font-size: 1.75rem;
+    color: white;
+    animation: scrollBig 1s infinite alternate;
+    cursor: pointer;
+  }
+  body .wrap .content .sectionWrap {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  body .wrap .content .sectionWrap .ost {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 50px 50px 0;
+    color: white;
+  }
+  body .wrap .content .sectionWrap .ost h3 {
+    position: relative;
+    padding-bottom: 50px;
+    font-size: 3rem;
+  }
+  body .wrap .content .sectionWrap .ost h3:before {
+    content: "";
+    position: absolute;
+    top: 65px;
+    left: 0;
+    border: 2px solid red;
+    width: 70px;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer {
+    padding-bottom: 50px;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .upperOstList {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .upperOstList li {
+    display: block;
+    width: 49%;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .upperOstList li .ostVideo {
+    width: 100%;
+    height: 400px;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .upperOstList li .ostVideo iframe {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .upperOstList li .ostTxtBox {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .upperOstList li .ostTxtBox .ostTitle {
+    width: 100%;
+    padding-top: 30px;
+    font-size: 1.75rem;
+    line-height: 1.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .upperOstList li .ostTxtBox p {
+    width: 100%;
+    padding-top: 30px;
+    font-size: 1.125rem;
+    word-break: keep-all;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .lowerOstList {
+    padding-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .lowerOstList li {
+    display: block;
+    width: 49%;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .lowerOstList li .ostVideo {
+    width: 100%;
+    height: 500px;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .lowerOstList li .ostVideo iframe {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .lowerOstList li .ostTxtBox {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .lowerOstList li .ostTxtBox .ostTitle {
+    width: 100%;
+    padding-top: 30px;
+    font-size: 1.875rem;
+    line-height: 1.5;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .lowerOstList li .ostTxtBox p {
+    width: 100%;
+    padding-top: 30px;
+    font-size: 1.25rem;
+    word-break: break-all;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1119px) {
+  h2 {
+    font-size: 4.125rem;
+  }
+  body .wrap .content {
+    width: 100%;
+  }
+  body .wrap .content .subMain {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  body .wrap .content .subMain img {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    -o-object-fit: cover;
+       object-fit: cover;
+    z-index: -1;
+  }
+  body .wrap .content .subMain .pageName {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    bottom: 40%;
+    transform: translate(-50%, -50%);
+  }
+  body .wrap .content .subMain .scrollBtn {
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translateX(-50%);
+  }
+  body .wrap .content .subMain .scrollBtn button {
+    border: 0;
+    background-color: transparent;
+    display: block;
+    font-size: 1.75rem;
+    color: white;
+    animation: scrollBig 1s infinite alternate;
+    cursor: pointer;
+  }
+  body .wrap .content .sectionWrap {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  body .wrap .content .sectionWrap .ost {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 50px 50px 0;
+    color: white;
+  }
+  body .wrap .content .sectionWrap .ost h3 {
+    position: relative;
+    padding-bottom: 50px;
+    font-size: 3rem;
+  }
+  body .wrap .content .sectionWrap .ost h3:before {
+    content: "";
+    position: absolute;
+    top: 65px;
+    left: 0;
+    border: 2px solid red;
+    width: 70px;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer {
+    padding-bottom: 50px;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .upperOstList {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .upperOstList li {
+    display: block;
+    width: 49%;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .upperOstList li .ostVideo {
+    width: 100%;
+    height: 400px;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .upperOstList li .ostVideo iframe {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .upperOstList li .ostTxtBox {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .upperOstList li .ostTxtBox .ostTitle {
+    width: 100%;
+    padding-top: 30px;
+    font-size: 1.75rem;
+    line-height: 1.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .upperOstList li .ostTxtBox p {
+    width: 100%;
+    padding-top: 30px;
+    font-size: 1.125rem;
+    word-break: keep-all;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .lowerOstList {
+    padding-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .lowerOstList li {
+    display: block;
+    width: 49%;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .lowerOstList li .ostVideo {
+    width: 100%;
+    height: 400px;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .lowerOstList li .ostVideo iframe {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .lowerOstList li .ostTxtBox {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .lowerOstList li .ostTxtBox .ostTitle {
+    width: 100%;
+    padding-top: 30px;
+    font-size: 1.875rem;
+    line-height: 1.5;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .lowerOstList li .ostTxtBox p {
+    width: 100%;
+    padding-top: 30px;
+    font-size: 1.25rem;
+    word-break: break-all;
+  }
+}
+@media (min-width: 900px) and (max-width: 1023px) {
+  h2 {
+    font-size: 3.75rem;
+  }
+  body .wrap .content {
+    width: 100%;
+  }
+  body .wrap .content .subMain {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  body .wrap .content .subMain img {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    -o-object-fit: cover;
+       object-fit: cover;
+    z-index: -1;
+  }
+  body .wrap .content .subMain .pageName {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    bottom: 40%;
+    transform: translate(-50%, -50%);
+  }
+  body .wrap .content .subMain .scrollBtn {
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translateX(-50%);
+  }
+  body .wrap .content .subMain .scrollBtn button {
+    border: 0;
+    background-color: transparent;
+    display: block;
+    font-size: 1.75rem;
+    color: white;
+    animation: scrollBig 1s infinite alternate;
+    cursor: pointer;
+  }
+  body .wrap .content .sectionWrap {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  body .wrap .content .sectionWrap .ost {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 50px 50px 0;
+    color: white;
+  }
+  body .wrap .content .sectionWrap .ost h3 {
+    position: relative;
+    padding-bottom: 50px;
+    font-size: 3rem;
+  }
+  body .wrap .content .sectionWrap .ost h3:before {
+    content: "";
+    position: absolute;
+    top: 65px;
+    left: 0;
+    border: 2px solid red;
+    width: 70px;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer {
+    padding-bottom: 50px;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .upperOstList {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .upperOstList li {
+    display: block;
+    width: 49%;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .upperOstList li .ostVideo {
+    width: 100%;
+    height: 400px;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .upperOstList li .ostVideo iframe {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .upperOstList li .ostTxtBox {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .upperOstList li .ostTxtBox .ostTitle {
+    width: 100%;
+    padding-top: 30px;
+    font-size: 1.625rem;
+    line-height: 1.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .upperOstList li .ostTxtBox p {
+    width: 100%;
+    padding-top: 30px;
+    font-size: 1.125rem;
+    word-break: keep-all;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .lowerOstList {
+    padding-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .lowerOstList li {
+    display: block;
+    width: 49%;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .lowerOstList li .ostVideo {
+    width: 100%;
+    height: 300px;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .lowerOstList li .ostVideo iframe {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .lowerOstList li .ostTxtBox {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .lowerOstList li .ostTxtBox .ostTitle {
+    width: 100%;
+    padding-top: 30px;
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .lowerOstList li .ostTxtBox p {
+    width: 100%;
+    padding-top: 30px;
+    font-size: 1.25rem;
+    word-break: break-all;
+  }
+}
+@media (min-width: 720px) and (max-width: 899px) {
+  h2 {
+    font-size: 3.75rem;
+  }
+  body .wrap .content {
+    width: 100%;
+  }
+  body .wrap .content .subMain {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  body .wrap .content .subMain img {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    -o-object-fit: cover;
+       object-fit: cover;
+    z-index: -1;
+  }
+  body .wrap .content .subMain .pageName {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    bottom: 40%;
+    transform: translate(-50%, -50%);
+  }
+  body .wrap .content .subMain .scrollBtn {
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translateX(-50%);
+  }
+  body .wrap .content .subMain .scrollBtn button {
+    border: 0;
+    background-color: transparent;
+    display: block;
+    font-size: 1.75rem;
+    color: white;
+    animation: scrollBig 1s infinite alternate;
+    cursor: pointer;
+  }
+  body .wrap .content .sectionWrap {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  body .wrap .content .sectionWrap .ost {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 50px 50px 0;
+    color: white;
+  }
+  body .wrap .content .sectionWrap .ost h3 {
+    position: relative;
+    padding-bottom: 50px;
+    font-size: 3rem;
+  }
+  body .wrap .content .sectionWrap .ost h3:before {
+    content: "";
+    position: absolute;
+    top: 65px;
+    left: 0;
+    border: 2px solid red;
+    width: 70px;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer {
+    padding-bottom: 50px;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .upperOstList {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .upperOstList li {
+    display: block;
+    width: 49%;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .upperOstList li .ostVideo {
+    width: 100%;
+    height: 400px;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .upperOstList li .ostVideo iframe {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .upperOstList li .ostTxtBox {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .upperOstList li .ostTxtBox .ostTitle {
+    width: 100%;
+    padding-top: 30px;
+    font-size: 1.75rem;
+    line-height: 1.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .upperOstList li .ostTxtBox p {
+    width: 100%;
+    padding-top: 30px;
+    font-size: 1.125rem;
+    word-break: keep-all;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .lowerOstList {
+    padding-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .lowerOstList li {
+    display: block;
+    width: 49%;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .lowerOstList li .ostVideo {
+    width: 100%;
+    height: 200px;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .lowerOstList li .ostVideo iframe {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .lowerOstList li .ostTxtBox {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .lowerOstList li .ostTxtBox .ostTitle {
+    width: 100%;
+    padding-top: 30px;
+    font-size: 1.875rem;
+    line-height: 1.5;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .lowerOstList li .ostTxtBox p {
+    width: 100%;
+    padding-top: 30px;
+    font-size: 1.25rem;
+    word-break: break-all;
+  }
 }/*# sourceMappingURL=ost.css.map */

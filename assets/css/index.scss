@@ -305,6 +305,7 @@ body {
                   width: 100%;
                   text-decoration: none;
                   text-align: center;
+
                   color: white;
                   img {
                     width: 100%;
@@ -319,6 +320,9 @@ body {
                     font-family: PretenRegular;
                     font-weight: 400;
                     font-size: 1.125rem;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
                   }
                   &:hover img {
                     transform: scaleX(-1);
@@ -435,3 +439,5 @@ body {
     }
   }
 }
+
+@import "_media";

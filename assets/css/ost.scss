@@ -13,10 +13,6 @@ h4 {
   font-weight: 700;
 }
 
-section {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
 @keyframes scrollBig {
   0% {
     opacity: 1;
@@ -66,91 +62,94 @@ body {
           }
         }
       }
-      .ost {
-        max-width: 1920px;
-        margin: 0 auto;
-        padding: 50px 50px 0;
-        color: white;
-        h3 {
-          position: relative;
-          padding-bottom: 50px;
-          font-size: 3.25rem;
-          &:before {
-            content: "";
-            position: absolute;
-            top: 70px;
-            left: 0;
-            border: 2px solid red;
-            width: 80px;
+      .sectionWrap {
+        background-color: rgba(0, 0, 0, 0.5);
+        .ost {
+          max-width: 1920px;
+          margin: 0 auto;
+          padding: 50px 50px 0;
+          color: white;
+          h3 {
+            position: relative;
+            padding-bottom: 50px;
+            font-size: 3.25rem;
+            &:before {
+              content: "";
+              position: absolute;
+              top: 70px;
+              left: 0;
+              border: 2px solid red;
+              width: 80px;
+            }
           }
-        }
-        .ostContainer {
-          padding-bottom: 50px;
-          .upperOstList {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            li {
-              display: block;
-              width: 49%;
-              .ostVideo {
-                width: 100%;
-                height: 500px;
-                iframe {
+          .ostContainer {
+            padding-bottom: 50px;
+            .upperOstList {
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+              li {
+                display: block;
+                width: 49%;
+                .ostVideo {
                   width: 100%;
-                  height: 100%;
-                  object-fit: cover;
+                  height: 500px;
+                  iframe {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                  }
                 }
-              }
-              .ostTxtBox {
-                width: 100%;
-                padding-bottom: 30px;
-                .ostTitle {
+                .ostTxtBox {
                   width: 100%;
-                  padding-top: 30px;
-                  font-size: 1.875rem;
-                  line-height: 1.5;
-                }
-                p {
-                  width: 100%;
-                  padding-top: 30px;
-                  font-size: 1.25rem;
-                  word-break: break-all;
+                  padding-bottom: 30px;
+                  .ostTitle {
+                    width: 100%;
+                    padding-top: 30px;
+                    font-size: 1.875rem;
+                    line-height: 1.5;
+                  }
+                  p {
+                    width: 100%;
+                    padding-top: 30px;
+                    font-size: 1.25rem;
+                    word-break: break-all;
+                  }
                 }
               }
             }
-          }
-          .lowerOstList {
-            padding-top: 100px;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            li {
-              display: block;
-              width: 49%;
-              .ostVideo {
-                width: 100%;
-                height: 500px;
-                iframe {
+            .lowerOstList {
+              padding-top: 100px;
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+              li {
+                display: block;
+                width: 49%;
+                .ostVideo {
                   width: 100%;
-                  height: 100%;
-                  object-fit: cover;
+                  height: 500px;
+                  iframe {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                  }
                 }
-              }
-              .ostTxtBox {
-                width: 100%;
-                padding-bottom: 30px;
-                .ostTitle {
+                .ostTxtBox {
                   width: 100%;
-                  padding-top: 30px;
-                  font-size: 1.875rem;
-                  line-height: 1.5;
-                }
-                p {
-                  width: 100%;
-                  padding-top: 30px;
-                  font-size: 1.25rem;
-                  word-break: break-all;
+                  padding-bottom: 30px;
+                  .ostTitle {
+                    width: 100%;
+                    padding-top: 30px;
+                    font-size: 1.875rem;
+                    line-height: 1.5;
+                  }
+                  p {
+                    width: 100%;
+                    padding-top: 30px;
+                    font-size: 1.25rem;
+                    word-break: keep-all;
+                  }
                 }
               }
             }
@@ -160,3 +159,5 @@ body {
     }
   }
 }
+
+@import "_ost_media";

@@ -69,147 +69,745 @@ dd {
   animation: scrollBig 1s infinite alternate;
   cursor: pointer;
 }
-.content .character {
+.content .sectionWrap {
   background-color: rgba(0, 0, 0, 0.9);
+}
+.content .sectionWrap .character {
   padding: 50px;
   max-width: 1920px;
   margin: 0 auto;
 }
-.content .character .mario {
+.content .sectionWrap .character .mario {
   position: relative;
 }
-.content .character .mario .marioPng {
+.content .sectionWrap .character .mario .marioPng {
   position: absolute;
   top: -50px;
   left: 100px;
   width: 20%;
 }
-.content .character .mario .marioPng img {
+.content .sectionWrap .character .mario .marioPng img {
   width: 250px;
 }
-.content .character .mario .marioTxt {
+.content .sectionWrap .character .mario .marioTxt {
   float: right;
   width: 60%;
 }
-.content .character .mario .marioTxt h3 {
+.content .sectionWrap .character .mario .marioTxt h3 {
   font-size: 3.75rem;
   padding-bottom: 30px;
 }
-.content .character .mario .marioTxt p {
+.content .sectionWrap .character .mario .marioTxt p {
   font-size: 1.25rem;
 }
-.content .character .mario .marioImg {
+.content .sectionWrap .character .mario .marioImg {
   display: flex;
   justify-content: space-between;
   overflow: hidden;
   clear: both;
   width: 100%;
 }
-.content .character .mario .marioImg li {
+.content .sectionWrap .character .mario .marioImg li {
   padding-top: 200px;
   padding-bottom: 100px;
   width: 32%;
   height: 300px;
   text-align: center;
 }
-.content .character .mario .marioImg li img {
+.content .sectionWrap .character .mario .marioImg li img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.content .character .peach {
+.content .sectionWrap .character .peach {
   position: relative;
 }
-.content .character .peach .peachPng {
+.content .sectionWrap .character .peach .peachPng {
   position: absolute;
   top: -50px;
   right: 100px;
   width: 15%;
 }
-.content .character .peach .peachPng img {
+.content .sectionWrap .character .peach .peachPng img {
   width: 250px;
 }
-.content .character .peach .peachTxt {
+.content .sectionWrap .character .peach .peachTxt {
   width: 60%;
 }
-.content .character .peach .peachTxt h3 {
+.content .sectionWrap .character .peach .peachTxt h3 {
   font-size: 3.75rem;
   padding-bottom: 30px;
 }
-.content .character .peach .peachTxt p {
+.content .sectionWrap .character .peach .peachTxt p {
   font-size: 1.25rem;
 }
-.content .character .peach .peachImg {
+.content .sectionWrap .character .peach .peachImg {
   display: flex;
   justify-content: space-between;
   overflow: hidden;
   clear: both;
   width: 100%;
 }
-.content .character .peach .peachImg li {
+.content .sectionWrap .character .peach .peachImg li {
   padding-top: 300px;
   width: 32%;
   height: 300px;
   text-align: center;
 }
-.content .character .peach .peachImg li img {
+.content .sectionWrap .character .peach .peachImg li img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.content .character .subCharacter {
+.content .sectionWrap .character .subCharacter {
   width: 100%;
   padding-top: 100px;
 }
-.content .character .subCharacter dt {
+.content .sectionWrap .character .subCharacter dt {
   font-size: 2.5rem;
   padding-bottom: 20px;
 }
-.content .character .subCharacter dd {
+.content .sectionWrap .character .subCharacter dd {
   font-size: 1.125rem;
   display: block;
   padding-bottom: 50px;
 }
-.content .character .subCharacter .subCharacterList {
+.content .sectionWrap .character .subCharacter .subCharacterList {
   display: flex;
   flex-wrap: wrap;
 }
-.content .character .subCharacter .subCharacterList li {
+.content .sectionWrap .character .subCharacter .subCharacterList li {
   width: 48%;
   display: flex;
   justify-content: space-between;
 }
-.content .character .subCharacter .subCharacterList li dl {
+.content .sectionWrap .character .subCharacter .subCharacterList li dl {
   width: 48%;
+  word-break: keep-all;
 }
-.content .character .subCharacter .subCharacterList li div {
+.content .sectionWrap .character .subCharacter .subCharacterList li div {
   width: 48%;
   height: 400px;
 }
-.content .character .subCharacter .subCharacterList li div img {
+.content .sectionWrap .character .subCharacter .subCharacterList li div img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
-.content .character .others {
+.content .sectionWrap .character .others {
   width: 100%;
   padding: 100px 0;
 }
-.content .character .others .othersCharacter {
+.content .sectionWrap .character .others .othersCharacter {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.content .character .others .othersCharacter li {
+.content .sectionWrap .character .others .othersCharacter li {
   width: 32%;
-  height: 300px;
 }
-.content .character .others .othersCharacter li img {
+.content .sectionWrap .character .others .othersCharacter li img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  h2 {
+    font-size: 4.125rem;
+  }
+  .content {
+    width: 100%;
+  }
+  .content .subMain {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  .content .subMain img {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    -o-object-fit: cover;
+       object-fit: cover;
+    z-index: -1;
+  }
+  .content .subMain .pageName {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    bottom: 40%;
+    transform: translate(-50%, -50%);
+  }
+  .content .subMain .scrollBtn {
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translateX(-50%);
+  }
+  .content .subMain .scrollBtn button {
+    border: 0;
+    background-color: transparent;
+    display: block;
+    font-size: 1.75rem;
+    color: white;
+    animation: scrollBig 1s infinite alternate;
+    cursor: pointer;
+  }
+  .content .sectionWrap {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  .content .sectionWrap .character {
+    padding: 50px 50px 0;
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+  .content .sectionWrap .character .mario {
+    position: relative;
+  }
+  .content .sectionWrap .character .mario .marioPng {
+    position: absolute;
+    top: -50px;
+    left: 50px;
+    width: 20%;
+  }
+  .content .sectionWrap .character .mario .marioPng img {
+    width: 250px;
+  }
+  .content .sectionWrap .character .mario .marioTxt {
+    float: right;
+    width: 60%;
+  }
+  .content .sectionWrap .character .mario .marioTxt h3 {
+    font-size: 3.75rem;
+    padding-bottom: 30px;
+  }
+  .content .sectionWrap .character .mario .marioTxt p {
+    font-size: 1.25rem;
+  }
+  .content .sectionWrap .character .mario .marioImg {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    clear: both;
+    width: 100%;
+  }
+  .content .sectionWrap .character .mario .marioImg li {
+    padding-top: 200px;
+    padding-bottom: 100px;
+    width: 32%;
+    height: 300px;
+    text-align: center;
+  }
+  .content .sectionWrap .character .mario .marioImg li img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .content .sectionWrap .character .peach {
+    position: relative;
+  }
+  .content .sectionWrap .character .peach .peachPng {
+    position: absolute;
+    top: -50px;
+    right: 100px;
+    width: 15%;
+  }
+  .content .sectionWrap .character .peach .peachPng img {
+    width: 250px;
+  }
+  .content .sectionWrap .character .peach .peachTxt {
+    width: 60%;
+  }
+  .content .sectionWrap .character .peach .peachTxt h3 {
+    font-size: 3.75rem;
+    padding-bottom: 30px;
+  }
+  .content .sectionWrap .character .peach .peachTxt p {
+    font-size: 1.25rem;
+  }
+  .content .sectionWrap .character .peach .peachImg {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    clear: both;
+    width: 100%;
+  }
+  .content .sectionWrap .character .peach .peachImg li {
+    padding-top: 200px;
+    width: 32%;
+    height: 300px;
+    text-align: center;
+  }
+  .content .sectionWrap .character .peach .peachImg li img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .content .sectionWrap .character .subCharacter {
+    width: 100%;
+    padding-top: 100px;
+  }
+  .content .sectionWrap .character .subCharacter dt {
+    font-size: 2.5rem;
+    padding-bottom: 20px;
+  }
+  .content .sectionWrap .character .subCharacter dd {
+    font-size: 1.125rem;
+    display: block;
+    padding-bottom: 50px;
+  }
+  .content .sectionWrap .character .subCharacter .subCharacterList {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .content .sectionWrap .character .subCharacter .subCharacterList li {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+  }
+  .content .sectionWrap .character .subCharacter .subCharacterList li dl {
+    width: 48%;
+    word-break: keep-all;
+  }
+  .content .sectionWrap .character .subCharacter .subCharacterList li div {
+    width: 48%;
+    height: 400px;
+  }
+  .content .sectionWrap .character .subCharacter .subCharacterList li div img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .content .sectionWrap .character .others {
+    width: 100%;
+    padding: 100px 0;
+  }
+  .content .sectionWrap .character .others .othersCharacter {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .content .sectionWrap .character .others .othersCharacter li {
+    width: 32%;
+  }
+  .content .sectionWrap .character .others .othersCharacter li img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media (min-width: 900px) and (max-width: 1023px) {
+  h2 {
+    font-size: 3.75rem;
+  }
+  .content {
+    width: 100%;
+  }
+  .content .subMain {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  .content .subMain img {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    -o-object-fit: cover;
+       object-fit: cover;
+    z-index: -1;
+  }
+  .content .subMain .pageName {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    bottom: 40%;
+    transform: translate(-50%, -50%);
+  }
+  .content .subMain .scrollBtn {
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translateX(-50%);
+  }
+  .content .subMain .scrollBtn button {
+    border: 0;
+    background-color: transparent;
+    display: block;
+    font-size: 1.5rem;
+    color: white;
+    animation: scrollBig 1s infinite alternate;
+    cursor: pointer;
+  }
+  .content .sectionWrap {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  .content .sectionWrap .character {
+    padding: 50px 50px 0;
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+  .content .sectionWrap .character .mario {
+    position: relative;
+  }
+  .content .sectionWrap .character .mario .marioPng {
+    position: absolute;
+    top: -50px;
+    left: 50px;
+    width: 20%;
+  }
+  .content .sectionWrap .character .mario .marioPng img {
+    width: 200px;
+  }
+  .content .sectionWrap .character .mario .marioTxt {
+    float: right;
+    width: 60%;
+  }
+  .content .sectionWrap .character .mario .marioTxt h3 {
+    font-size: 3.125rem;
+    padding-bottom: 30px;
+  }
+  .content .sectionWrap .character .mario .marioTxt p {
+    font-size: 1.125rem;
+  }
+  .content .sectionWrap .character .mario .marioImg {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    clear: both;
+    width: 100%;
+  }
+  .content .sectionWrap .character .mario .marioImg li {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 32%;
+    height: 300px;
+    text-align: center;
+  }
+  .content .sectionWrap .character .mario .marioImg li img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .content .sectionWrap .character .peach {
+    position: relative;
+  }
+  .content .sectionWrap .character .peach .peachPng {
+    position: absolute;
+    top: -50px;
+    right: 100px;
+    width: 15%;
+  }
+  .content .sectionWrap .character .peach .peachPng img {
+    width: 200px;
+  }
+  .content .sectionWrap .character .peach .peachTxt {
+    width: 60%;
+  }
+  .content .sectionWrap .character .peach .peachTxt h3 {
+    font-size: 3.125rem;
+    padding-bottom: 30px;
+  }
+  .content .sectionWrap .character .peach .peachTxt p {
+    font-size: 1.125rem;
+  }
+  .content .sectionWrap .character .peach .peachImg {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    clear: both;
+    width: 100%;
+  }
+  .content .sectionWrap .character .peach .peachImg li {
+    padding-top: 100px;
+    width: 32%;
+    height: 300px;
+    text-align: center;
+  }
+  .content .sectionWrap .character .peach .peachImg li img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .content .sectionWrap .character .subCharacter {
+    width: 100%;
+    padding-top: 100px;
+  }
+  .content .sectionWrap .character .subCharacter dt {
+    font-size: 2.5rem;
+    padding-bottom: 20px;
+  }
+  .content .sectionWrap .character .subCharacter dd {
+    font-size: 1.125rem;
+    display: block;
+    padding-bottom: 50px;
+  }
+  .content .sectionWrap .character .subCharacter .subCharacterList {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .content .sectionWrap .character .subCharacter .subCharacterList li {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+  }
+  .content .sectionWrap .character .subCharacter .subCharacterList li dl {
+    width: 48%;
+    word-break: keep-all;
+  }
+  .content .sectionWrap .character .subCharacter .subCharacterList li div {
+    width: 48%;
+    height: 400px;
+  }
+  .content .sectionWrap .character .subCharacter .subCharacterList li div img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .content .sectionWrap .character .others {
+    width: 100%;
+    padding: 100px 0;
+  }
+  .content .sectionWrap .character .others .othersCharacter {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .content .sectionWrap .character .others .othersCharacter li {
+    width: 32%;
+  }
+  .content .sectionWrap .character .others .othersCharacter li img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media (min-width: 720px) and (max-width: 899px) {
+  h2 {
+    font-size: 3.75rem;
+  }
+  .content {
+    width: 100%;
+  }
+  .content .subMain {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  .content .subMain img {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    -o-object-fit: cover;
+       object-fit: cover;
+    z-index: -1;
+  }
+  .content .subMain .pageName {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    bottom: 40%;
+    transform: translate(-50%, -50%);
+  }
+  .content .subMain .scrollBtn {
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translateX(-50%);
+  }
+  .content .subMain .scrollBtn button {
+    border: 0;
+    background-color: transparent;
+    display: block;
+    font-size: 1.5rem;
+    color: white;
+    animation: scrollBig 1s infinite alternate;
+    cursor: pointer;
+  }
+  .content .sectionWrap {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  .content .sectionWrap .character {
+    padding: 50px 50px 0;
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+  .content .sectionWrap .character .mario {
+    position: relative;
+  }
+  .content .sectionWrap .character .mario .marioPng {
+    position: absolute;
+    top: -50px;
+    left: 50px;
+    width: 20%;
+    display: none;
+  }
+  .content .sectionWrap .character .mario .marioPng img {
+    width: 200px;
+  }
+  .content .sectionWrap .character .mario .marioTxt {
+    float: none;
+    width: 100%;
+  }
+  .content .sectionWrap .character .mario .marioTxt h3 {
+    font-size: 3.125rem;
+    padding-bottom: 30px;
+  }
+  .content .sectionWrap .character .mario .marioTxt p {
+    font-size: 1.125rem;
+  }
+  .content .sectionWrap .character .mario .marioImg {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    clear: both;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+  }
+  .content .sectionWrap .character .mario .marioImg li {
+    padding: 0;
+    width: 49%;
+    text-align: center;
+  }
+  .content .sectionWrap .character .mario .marioImg li:nth-child(1) {
+    padding-top: 50px;
+    padding-bottom: 15px;
+    width: 100%;
+  }
+  .content .sectionWrap .character .mario .marioImg li img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .content .sectionWrap .character .peach {
+    position: relative;
+  }
+  .content .sectionWrap .character .peach .peachPng {
+    position: absolute;
+    top: -50px;
+    right: 100px;
+    width: 15%;
+    display: none;
+  }
+  .content .sectionWrap .character .peach .peachPng img {
+    width: 200px;
+  }
+  .content .sectionWrap .character .peach .peachTxt {
+    width: 100%;
+  }
+  .content .sectionWrap .character .peach .peachTxt h3 {
+    font-size: 3.125rem;
+    padding-bottom: 30px;
+  }
+  .content .sectionWrap .character .peach .peachTxt p {
+    font-size: 1.125rem;
+  }
+  .content .sectionWrap .character .peach .peachImg {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    clear: both;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .content .sectionWrap .character .peach .peachImg li {
+    padding-top: 0px;
+    width: 49%;
+    text-align: center;
+  }
+  .content .sectionWrap .character .peach .peachImg li:nth-child(1) {
+    padding-top: 50px;
+    padding-bottom: 15px;
+    width: 100%;
+  }
+  .content .sectionWrap .character .peach .peachImg li img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .content .sectionWrap .character .subCharacter {
+    width: 100%;
+    padding-top: 100px;
+  }
+  .content .sectionWrap .character .subCharacter dt {
+    font-size: 2.5rem;
+    padding-bottom: 20px;
+  }
+  .content .sectionWrap .character .subCharacter dd {
+    font-size: 1.125rem;
+    display: block;
+    padding-bottom: 50px;
+  }
+  .content .sectionWrap .character .subCharacter .subCharacterList {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .content .sectionWrap .character .subCharacter .subCharacterList li {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+  }
+  .content .sectionWrap .character .subCharacter .subCharacterList li dl {
+    width: 48%;
+    word-break: keep-all;
+  }
+  .content .sectionWrap .character .subCharacter .subCharacterList li div {
+    width: 48%;
+    height: 400px;
+  }
+  .content .sectionWrap .character .subCharacter .subCharacterList li div img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .content .sectionWrap .character .others {
+    width: 100%;
+    padding: 0 0 100px;
+  }
+  .content .sectionWrap .character .others .othersCharacter {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .content .sectionWrap .character .others .othersCharacter li {
+    width: 49%;
+  }
+  .content .sectionWrap .character .others .othersCharacter li:nth-child(1) {
+    padding-top: 0px;
+    padding-bottom: 15px;
+    width: 100%;
+  }
+  .content .sectionWrap .character .others .othersCharacter li img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }/*# sourceMappingURL=character.css.map */

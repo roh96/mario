@@ -11,10 +11,6 @@ h4 {
   font-weight: 700;
 }
 
-section {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
 @keyframes scrollBig {
   0% {
     opacity: 1;
@@ -63,17 +59,21 @@ body .wrap .content .subMain .scrollBtn button {
   animation: scrollBig 1s infinite alternate;
   cursor: pointer;
 }
-body .wrap .content .trailer {
+body .wrap .content .sectionWrap {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+body .wrap .content .sectionWrap .trailer {
   max-width: 1920px;
   margin: 0 auto;
   padding: 50px 50px 50px;
   color: white;
 }
-body .wrap .content .trailer h3 {
+body .wrap .content .sectionWrap .trailer h3 {
   position: relative;
   padding-bottom: 50px;
+  font-size: 3.25rem;
 }
-body .wrap .content .trailer h3:before {
+body .wrap .content .sectionWrap .trailer h3:before {
   content: "";
   position: absolute;
   top: 70px;
@@ -81,45 +81,251 @@ body .wrap .content .trailer h3:before {
   border: 2px solid red;
   width: 80px;
 }
-body .wrap .content .trailer .swiperWrap {
+body .wrap .content .sectionWrap .trailer .swiperWrap {
   width: 100%;
 }
-body .wrap .content .trailer .swiperWrap .mySwiper2 {
+body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper2 {
   height: 80%;
   width: 100%;
 }
-body .wrap .content .trailer .swiperWrap .mySwiper2 .swiper-wrapper .swiper-slide .videobox {
+body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper2 .swiper-wrapper .swiper-slide .videobox {
   position: relative;
   width: 100%;
   padding-bottom: 56.25%;
 }
-body .wrap .content .trailer .swiperWrap .mySwiper2 .swiper-wrapper .swiper-slide .videobox iframe {
+body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper2 .swiper-wrapper .swiper-slide .videobox iframe {
   position: absolute;
   width: 100%;
   height: 100%;
 }
-body .wrap .content .trailer .swiperWrap .mySwiper {
+body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper {
   height: 200px;
   box-sizing: border-box;
   padding: 15px 0;
 }
-body .wrap .content .trailer .swiperWrap .mySwiper .swiper-wrapper {
+body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-wrapper {
   display: flex;
   justify-content: space-between;
 }
-body .wrap .content .trailer .swiperWrap .mySwiper .swiper-wrapper .swiper-slide {
+body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-wrapper .swiper-slide {
   height: 100%;
   background-size: cover;
   background-position: center;
   cursor: pointer;
 }
-body .wrap .content .trailer .swiperWrap .mySwiper .swiper-wrapper .swiper-slide img {
+body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-wrapper .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-body .wrap .content .trailer .officialTrailer {
-  font-size: 3.25rem;
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  h2 {
+    font-size: 4.125rem;
+  }
+  body .wrap .content {
+    width: 100%;
+  }
+  body .wrap .content .subMain {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  body .wrap .content .subMain img {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    -o-object-fit: cover;
+       object-fit: cover;
+    z-index: -1;
+  }
+  body .wrap .content .subMain .pageName {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    bottom: 40%;
+    transform: translate(-50%, -50%);
+  }
+  body .wrap .content .subMain .scrollBtn {
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translateX(-50%);
+  }
+  body .wrap .content .subMain .scrollBtn button {
+    border: 0;
+    background-color: transparent;
+    display: block;
+    font-size: 1.75rem;
+    color: white;
+    animation: scrollBig 1s infinite alternate;
+    cursor: pointer;
+  }
+  body .wrap .content .sectionWrap {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  body .wrap .content .sectionWrap .trailer {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 50px 50px 50px;
+    color: white;
+  }
+  body .wrap .content .sectionWrap .trailer h3 {
+    position: relative;
+    padding-bottom: 50px;
+    font-size: 3rem;
+  }
+  body .wrap .content .sectionWrap .trailer h3:before {
+    content: "";
+    position: absolute;
+    top: 65px;
+    left: 0;
+    border: 2px solid red;
+    width: 70px;
+  }
+  body .wrap .content .sectionWrap .trailer .swiperWrap {
+    width: 100%;
+  }
+  body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper2 {
+    height: 80%;
+    width: 100%;
+  }
+  body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper2 .swiper-wrapper .swiper-slide .videobox {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+  }
+  body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper2 .swiper-wrapper .swiper-slide .videobox iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper {
+    height: 200px;
+    box-sizing: border-box;
+    padding: 15px 0;
+  }
+  body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-wrapper .swiper-slide {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+  }
+  body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-wrapper .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media (min-width: 720px) and (max-width: 1023px) {
+  h2 {
+    font-size: 3.75rem;
+  }
+  body .wrap .content {
+    width: 100%;
+  }
+  body .wrap .content .subMain {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  body .wrap .content .subMain img {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    -o-object-fit: cover;
+       object-fit: cover;
+    z-index: -1;
+  }
+  body .wrap .content .subMain .pageName {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    bottom: 40%;
+    transform: translate(-50%, -50%);
+  }
+  body .wrap .content .subMain .scrollBtn {
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translateX(-50%);
+  }
+  body .wrap .content .subMain .scrollBtn button {
+    border: 0;
+    background-color: transparent;
+    display: block;
+    font-size: 1.5rem;
+    color: white;
+    animation: scrollBig 1s infinite alternate;
+    cursor: pointer;
+  }
+  body .wrap .content .sectionWrap {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  body .wrap .content .sectionWrap .trailer {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 50px 50px 50px;
+    color: white;
+  }
+  body .wrap .content .sectionWrap .trailer h3 {
+    position: relative;
+    padding-bottom: 40px;
+    font-size: 2.5rem;
+  }
+  body .wrap .content .sectionWrap .trailer h3:before {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 0;
+    border: 2px solid red;
+    width: 70px;
+  }
+  body .wrap .content .sectionWrap .trailer .swiperWrap {
+    width: 100%;
+  }
+  body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper2 {
+    height: 80%;
+    width: 100%;
+  }
+  body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper2 .swiper-wrapper .swiper-slide .videobox {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+  }
+  body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper2 .swiper-wrapper .swiper-slide .videobox iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper {
+    height: 200px;
+    box-sizing: border-box;
+    padding: 15px 0;
+  }
+  body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-wrapper .swiper-slide {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+  }
+  body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-wrapper .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }/*# sourceMappingURL=trailer.css.map */

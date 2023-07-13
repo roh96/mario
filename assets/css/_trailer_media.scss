@@ -1,0 +1,258 @@
+@media (min-width: 1024px) and (max-width: 1279px) {
+  h2 {
+    font-size: 4.125rem;
+  }
+
+  body {
+    .wrap {
+      .content {
+        width: 100%;
+        .subMain {
+          width: 100%;
+          height: 100vh;
+          position: relative;
+          img {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            object-fit: cover;
+            z-index: -1;
+          }
+          .pageName {
+            display: inline-block;
+            position: absolute;
+            left: 50%;
+            bottom: 40%;
+            transform: translate(-50%, -50%);
+          }
+          .scrollBtn {
+            position: absolute;
+            left: 50%;
+            bottom: 20%;
+            transform: translateX(-50%);
+            button {
+              border: 0;
+              background-color: transparent;
+              display: block;
+              font-size: 1.75rem;
+              color: white;
+              animation: scrollBig 1s infinite alternate;
+              cursor: pointer;
+            }
+          }
+        }
+        .sectionWrap {
+          background-color: rgba(0, 0, 0, 0.5);
+          .trailer {
+            max-width: 1920px;
+            margin: 0 auto;
+            padding: 50px 50px 50px;
+            color: white;
+            h3 {
+              position: relative;
+              padding-bottom: 50px;
+              font-size: 3rem;
+              &:before {
+                content: "";
+                position: absolute;
+                top: 65px;
+                left: 0;
+                border: 2px solid red;
+                width: 70px;
+              }
+            }
+            .swiperWrap {
+              width: 100%;
+              // height: 800px;
+              //위 큰스와이퍼
+              .mySwiper2 {
+                height: 80%;
+                width: 100%;
+                .swiper-wrapper {
+                  .swiper-slide {
+                    // text-align: center;
+                    // font-size: 18px;
+                    // background: #fff;
+                    // display: flex;
+                    // justify-content: center;
+                    // align-items: center;
+                    // background-size: cover;
+                    // background-position: center;
+                    .videobox {
+                      position: relative;
+                      width: 100%;
+                      padding-bottom: 56.25%;
+                      iframe {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                      }
+                    }
+                    // img {
+                    //   display: block;
+                    //   width: 100%;
+                    //   height: 100%;
+                    //   object-fit: cover;
+                    // }
+                  }
+                }
+              }
+              //아래작은스와이퍼
+              .mySwiper {
+                height: 200px;
+                box-sizing: border-box;
+                padding: 15px 0;
+                .swiper-wrapper {
+                  display: flex;
+                  justify-content: space-between;
+                  .swiper-slide {
+                    height: 100%;
+                    background-size: cover;
+                    background-position: center;
+                    cursor: pointer;
+
+                    img {
+                      display: block;
+                      width: 100%;
+                      height: 100%;
+                      object-fit: cover;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 720px) and (max-width: 1023px) {
+  h2 {
+    font-size: 3.75rem;
+  }
+
+  body {
+    .wrap {
+      .content {
+        width: 100%;
+        .subMain {
+          width: 100%;
+          height: 100vh;
+          position: relative;
+          img {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            object-fit: cover;
+            z-index: -1;
+          }
+          .pageName {
+            display: inline-block;
+            position: absolute;
+            left: 50%;
+            bottom: 40%;
+            transform: translate(-50%, -50%);
+          }
+          .scrollBtn {
+            position: absolute;
+            left: 50%;
+            bottom: 20%;
+            transform: translateX(-50%);
+            button {
+              border: 0;
+              background-color: transparent;
+              display: block;
+              font-size: 1.5rem;
+              color: white;
+              animation: scrollBig 1s infinite alternate;
+              cursor: pointer;
+            }
+          }
+        }
+        .sectionWrap {
+          background-color: rgba(0, 0, 0, 0.5);
+          .trailer {
+            max-width: 1920px;
+            margin: 0 auto;
+            padding: 50px 50px 50px;
+            color: white;
+            h3 {
+              position: relative;
+              padding-bottom: 40px;
+              font-size: 2.5rem;
+              &:before {
+                content: "";
+                position: absolute;
+                top: 50px;
+                left: 0;
+                border: 2px solid red;
+                width: 70px;
+              }
+            }
+            .swiperWrap {
+              width: 100%;
+              // height: 800px;
+              //위 큰스와이퍼
+              .mySwiper2 {
+                height: 80%;
+                width: 100%;
+                .swiper-wrapper {
+                  .swiper-slide {
+                    // text-align: center;
+                    // font-size: 18px;
+                    // background: #fff;
+                    // display: flex;
+                    // justify-content: center;
+                    // align-items: center;
+                    // background-size: cover;
+                    // background-position: center;
+                    .videobox {
+                      position: relative;
+                      width: 100%;
+                      padding-bottom: 56.25%;
+                      iframe {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                      }
+                    }
+                    // img {
+                    //   display: block;
+                    //   width: 100%;
+                    //   height: 100%;
+                    //   object-fit: cover;
+                    // }
+                  }
+                }
+              }
+              //아래작은스와이퍼
+              .mySwiper {
+                height: 200px;
+                box-sizing: border-box;
+                padding: 15px 0;
+                .swiper-wrapper {
+                  display: flex;
+                  justify-content: space-between;
+                  .swiper-slide {
+                    height: 100%;
+                    background-size: cover;
+                    background-position: center;
+                    cursor: pointer;
+
+                    img {
+                      display: block;
+                      width: 100%;
+                      height: 100%;
+                      object-fit: cover;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -11,10 +11,6 @@ h4 {
   font-weight: 700;
 }
 
-section {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
 @keyframes scrollBig {
   0% {
     opacity: 1;
@@ -63,39 +59,130 @@ section {
   animation: scrollBig 1s infinite alternate;
   cursor: pointer;
 }
-.content .gallery {
+.content .sectionWrap {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.content .sectionWrap .gallery {
   padding: 50px;
   max-width: 1920px;
   margin: 0 auto;
   text-align: center;
 }
-.content .gallery .grid {
+.content .sectionWrap .gallery .grid {
   margin: 0 auto;
 }
-.content .gallery .grid .gutter-sizer {
+.content .sectionWrap .gallery .grid .gutter-sizer {
   width: 4%;
 }
-.content .gallery .grid .griditem {
+.content .sectionWrap .gallery .grid .griditem {
   width: 300px;
   height: 300px;
   margin-bottom: 40px;
 }
-.content .gallery .grid .griditem img {
+.content .sectionWrap .gallery .grid .griditem img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
 }
-.content .gallery .grid .griditem p {
+.content .sectionWrap .gallery .grid .griditem p {
   color: white;
 }
-.content .gallery .grid .gt2 {
+.content .sectionWrap .gallery .grid .gt2 {
   height: 200px;
 }
-.content .gallery .grid .gt3 {
+.content .sectionWrap .gallery .grid .gt3 {
   height: 150px;
 }
-.content .gallery .grid .gt4 {
+.content .sectionWrap .gallery .grid .gt4 {
   height: 200px;
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  h2 {
+    font-size: 4.125rem;
+  }
+  .content {
+    width: 100%;
+  }
+  .content .subMain {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  .content .subMain img {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    -o-object-fit: cover;
+       object-fit: cover;
+    z-index: -1;
+  }
+  .content .subMain .pageName {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    bottom: 40%;
+    transform: translate(-50%, -50%);
+  }
+  .content .subMain .scrollBtn {
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translateX(-50%);
+  }
+  .content .subMain .scrollBtn button {
+    border: 0;
+    background-color: transparent;
+    display: block;
+    font-size: 2rem;
+    color: white;
+    animation: scrollBig 1s infinite alternate;
+    cursor: pointer;
+  }
+  .content .sectionWrap {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .content .sectionWrap .gallery {
+    padding: 50px;
+    max-width: 1920px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .content .sectionWrap .gallery .grid {
+    margin: 0 auto;
+  }
+  .content .sectionWrap .gallery .grid .gutter-sizer {
+    width: 4%;
+  }
+  .content .sectionWrap .gallery .grid .griditem {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 40px;
+  }
+  .content .sectionWrap .gallery .grid .griditem img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 10px;
+  }
+  .content .sectionWrap .gallery .grid .griditem p {
+    color: white;
+  }
+  .content .sectionWrap .gallery .grid .gt2 {
+    height: 200px;
+  }
+  .content .sectionWrap .gallery .grid .gt3 {
+    height: 150px;
+  }
+  .content .sectionWrap .gallery .grid .gt4 {
+    height: 200px;
+  }
+}
+@media (min-width: 720px) and (max-width: 1023px) {
+  h2 {
+    font-size: 3.75rem;
+  }
 }/*# sourceMappingURL=gallery.css.map */
