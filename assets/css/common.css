@@ -437,4 +437,177 @@ body footer .copyright {
     padding-top: 40px;
     padding-bottom: 20px;
   }
+}
+@media (min-width: 360px) and (max-width: 719px) {
+  body .header {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+  }
+  body .header .headerArea {
+    padding: 2.7778vw 5.5556vw 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  body .header .headerArea .headerLogo {
+    width: 100%;
+  }
+  body .header .headerArea .headerLogo h1 a {
+    display: block;
+    width: 19.4444vw;
+    height: 16.6667vw;
+    background-image: url("../image/logo/mainlogo1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+  }
+  body .header .headerArea .gnb {
+    display: block;
+  }
+  body .header .headerArea .gnb .mobileGnb {
+    top: 2.7778vw;
+    right: 5.5556vw;
+    position: absolute;
+    display: block;
+    padding-top: 5.5556vw;
+    z-index: 1;
+  }
+  body .header .headerArea .gnb .mobileGnb span {
+    display: block;
+    border: 1px solid #fff;
+    width: 5.5556vw;
+  }
+  body .header .headerArea .gnb .mobileGnb span:nth-child(1) {
+    margin-bottom: 1.3889vw;
+  }
+  body .header .headerArea .gnb .mobileGnb span:nth-child(2) {
+    margin-bottom: 1.3889vw;
+  }
+  body .header .headerArea .gnb .mobileGnb span:nth-child(3) {
+    margin-bottom: 1.3889vw;
+  }
+  body .header .headerArea .gnb .gnbList {
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #0b0e5f;
+    transition: 1s;
+    transform: translateY(-100%);
+  }
+  body .header .headerArea .gnb .gnbList .gnbItem {
+    margin-left: 0px;
+    padding: 2.7778vw 0;
+  }
+  body .header .headerArea .gnb .gnbList .gnbItem a {
+    font-family: bit;
+    font-weight: normal;
+    font-size: 4.4444vw;
+    color: #fff;
+    text-decoration: none;
+    transition: 2s;
+  }
+  body .header .headerArea .gnb .gnbList .gnbItem a:hover {
+    color: red;
+  }
+  body .header .headerArea .gnb .burgeron {
+    display: block;
+    transform: translateY(0%);
+  }
+  body .header .blue {
+    transition: 0.5s;
+    background-color: rgb(0, 0, 125);
+  }
+  body footer {
+    width: 100%;
+    background-color: #333;
+  }
+  body footer .footerArea {
+    padding: 5.5556vw 5.5556vw 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  body footer .footerArea .footerLogoBox {
+    width: 50%;
+  }
+  body footer .footerArea .footerLogoBox .footerLogo {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+  }
+  body footer .footerArea .footerLogoBox .footerLogo a {
+    display: block;
+    width: 16.6667vw;
+    height: 16.6667vw;
+    background-image: url("../image/logo/mainlogo1.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  body footer .footerArea .company {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body footer .footerArea .company .companyList {
+    display: flex;
+    justify-content: space-between;
+  }
+  body footer .footerArea .company .companyList .companyItem {
+    width: 42%;
+    margin: 0 auto;
+  }
+  body footer .footerArea .company .companyList .companyItem img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 22.2222vw;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  body footer .footerArea .upBtn {
+    position: fixed;
+    bottom: 8.3333vw;
+    right: 5.5556vw;
+    width: 6.6667vw;
+    height: 6.6667vw;
+    background-image: url("../image/footerjs/itembox.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    cursor: pointer;
+  }
+  body footer .footerArea .upBtn .upBtnArrow {
+    color: red;
+    font-size: 40px;
+    position: absolute;
+    height: 90%;
+    transition: 1s;
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  body footer .footerArea .upBtn:hover .upBtnArrow {
+    opacity: 0;
+  }
+  body footer .copyright {
+    color: white;
+    text-align: center;
+    display: block;
+    padding-top: 5.5556vw;
+    padding-bottom: 5.5556vw;
+    font-size: 3.3333vw;
+  }
 }/*# sourceMappingURL=common.css.map */

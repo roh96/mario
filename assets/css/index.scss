@@ -54,6 +54,9 @@ body {
         object-fit: cover;
         background-position: center center;
       }
+      .mainMobileVisual {
+        display: none;
+      }
       .scrollBtn {
         position: absolute;
         left: 50%;

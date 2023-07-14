@@ -53,3 +53,10 @@ $(document).ready(function () {
     });
   });
 });
+
+const burger = document.querySelector(".mobileGnb");
+const mobilenav = document.querySelector(".gnbList");
+
+burger.onclick = function () {
+  mobilenav.classList.toggle("burgeron");
+};

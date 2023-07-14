@@ -54,6 +54,9 @@ body main .mainvideo video {
      object-fit: cover;
   background-position: center center;
 }
+body main .mainvideo .mainMobileVisual {
+  display: none;
+}
 body main .mainvideo .scrollBtn {
   position: absolute;
   left: 50%;
@@ -481,6 +484,9 @@ body main .ost_gallery .ost_gallery_wrap .backgroundBox .gallery .moreBox a {
     -o-object-fit: cover;
        object-fit: cover;
     background-position: center center;
+  }
+  body main .mainvideo .mainMobileVisual {
+    display: none;
   }
   body main .mainvideo .scrollBtn {
     position: absolute;
@@ -910,6 +916,9 @@ body main .ost_gallery .ost_gallery_wrap .backgroundBox .gallery .moreBox a {
        object-fit: cover;
     background-position: center center;
   }
+  body main .mainvideo .mainMobileVisual {
+    display: none;
+  }
   body main .mainvideo .scrollBtn {
     position: absolute;
     left: 50%;
@@ -1298,6 +1307,460 @@ body main .ost_gallery .ost_gallery_wrap .backgroundBox .gallery .moreBox a {
     font-family: PretenRegular;
     font-weight: 400;
     font-size: 1.25rem;
+    color: white;
+  }
+}
+@media (min-width: 360px) and (max-width: 719px) {
+  .sectionName {
+    font-family: bit;
+    font-size: 11.1111vw;
+    transform: translateY(-100%);
+    transition: 1s;
+  }
+  .car {
+    transform: translateY(0);
+  }
+  section {
+    padding-top: 5.5556vw;
+  }
+  .bigImg {
+    width: 100%;
+    height: 55.5556vw;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  @keyframes scrollBig {
+    0% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0.8;
+      transform: scale(1.2);
+    }
+  }
+  body main {
+    width: 100%;
+  }
+  body main .mainvideo {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+  body main .mainvideo video {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-position: center center;
+    display: none;
+  }
+  body main .mainvideo .mainMobileVisual {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url("../image/wallpaper/mario5000x4286.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  body main .mainvideo .scrollBtn {
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translateX(-50%);
+  }
+  body main .mainvideo .scrollBtn button {
+    border: 0;
+    background-color: transparent;
+    display: block;
+    font-size: 5.5556vw;
+    color: white;
+    animation: scrollBig 1s infinite alternate;
+    cursor: pointer;
+  }
+  body main .about {
+    padding: 8.3333vw 5.5556vw;
+    margin: 0 auto;
+  }
+  body main .about .aboutTxtBox {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+  }
+  body main .about .aboutTxtBox h2 {
+    display: block;
+    padding-bottom: 8.3333vw;
+    color: red;
+  }
+  body main .about .aboutTxtBox .category {
+    display: block;
+    margin-bottom: 5.5556vw;
+    font-size: 5vw;
+  }
+  body main .about .aboutTxtBox p {
+    margin-bottom: 5.5556vw;
+  }
+  body main .about .aboutImgBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 55.5556vw;
+  }
+  body main .about .aboutImgBox .aboutLeftImgBox {
+    display: none;
+  }
+  body main .about .aboutImgBox .aboutRightImgBox {
+    width: 100%;
+    background-image: url("../image/about2.jpg");
+    background-position: center center;
+    background-size: cover;
+  }
+  body main .trailer .trailerBigImg {
+    background-image: url("../image/wallpaper/trailer3840x6080.jpg");
+    background-position: center center;
+  }
+  body main .trailer .trailerBigImg .trailerNamebox {
+    overflow: hidden;
+  }
+  body main .trailer .trailerBigImg .trailerNamebox h2 {
+    color: white;
+  }
+  body main .trailer .trailerList {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 5.5556vw 5.5556vw 0;
+  }
+  body main .trailer .trailerList .trailerItem {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    margin-right: 0;
+    padding-bottom: 5.5556vw;
+  }
+  body main .trailer .trailerList .trailerItem:nth-child(3n) {
+    display: none;
+    margin-right: 0;
+  }
+  body main .trailer .trailerList .trailerItem a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-family: PretenRegular;
+    font-weight: 400;
+    position: relative;
+  }
+  body main .trailer .trailerList .trailerItem a img {
+    width: 100%;
+    height: 80%;
+    padding-bottom: 2.7778vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body main .trailer .trailerList .trailerItem a .trailerName {
+    display: block;
+    text-align: center;
+    color: black;
+    word-break: keep-all;
+    font-size: 4.4444vw;
+  }
+  body main .trailer .trailerList .trailerItem a .trailerWrapGray {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(1, 1, 1, 0.25);
+  }
+  body main .trailer .trailerList .trailerItem a .trailerWrapGray .trailerWrapYoutube {
+    width: 40%;
+    height: 11.1111vw;
+    background-image: url("../image/youtubeBtn.png");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  body main .trailer .trailerList .trailerItem a:hover .trailerWrapGray {
+    display: flex;
+  }
+  body main .character .characterBigImg {
+    background-image: url("../image/wallpaper/character7680x4320.jpg");
+    background-position: center center;
+  }
+  body main .character .characterBigImg .characterNamebox {
+    overflow: hidden;
+  }
+  body main .character .characterBigImg .characterNamebox h2 {
+    color: white;
+  }
+  body main .character .characterContainer {
+    margin: 0 auto;
+    padding: 8.3333vw 5.5556vw;
+  }
+  body main .character .characterContainer .characterName {
+    font-size: 8.3333vw;
+    padding-bottom: 10px;
+    color: red;
+  }
+  body main .character .characterContainer p {
+    display: block;
+    font-size: 5vw;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+  }
+  body main .character .characterContainer img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body main .character .characterContainer a {
+    text-decoration: none;
+    color: black;
+  }
+  body main .character .characterContainer .upperCharacter {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0px;
+  }
+  body main .character .characterContainer .upperCharacter .characterContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 11.1111vw;
+  }
+  body main .character .characterContainer .upperCharacter .characterContent .characterTxt {
+    width: 100%;
+    order: 2;
+  }
+  body main .character .characterContainer .upperCharacter .characterContent .characterImg {
+    width: 100%;
+    order: 1;
+    padding-bottom: 5.5556vw;
+  }
+  body main .character .characterContainer .upperCharacter .characterContent:last-child .characterTxt {
+    order: 2;
+  }
+  body main .character .characterContainer .upperCharacter .characterContent:last-child .characterImg {
+    order: 1;
+  }
+  body main .character .characterContainer .lowerCharacter {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  body main .character .characterContainer .lowerCharacter .characterContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 8.3333vw;
+  }
+  body main .character .characterContainer .lowerCharacter .characterContent .characterTxt {
+    width: 100%;
+    order: 2;
+  }
+  body main .character .characterContainer .lowerCharacter .characterContent .characterImg {
+    width: 100%;
+    order: 1;
+    padding-bottom: 5.5556vw;
+  }
+  body main .character .characterContainer .lowerCharacter .characterContent:last-child .characterTxt {
+    order: 2;
+  }
+  body main .character .characterContainer .lowerCharacter .characterContent:last-child .characterImg {
+    order: 1;
+  }
+  body main .ost_gallery {
+    background-image: url("../image/ostgallery.jpg");
+    background-position: center center;
+    background-size: cover;
+  }
+  body main .ost_gallery h2 {
+    margin: 0 auto;
+    display: block;
+    color: white;
+    text-align: center;
+    padding-bottom: 5.5556vw;
+  }
+  body main .ost_gallery .ost_gallery_wrap {
+    margin: 0 auto;
+    padding: 0 5.5556vw 5.5556vw;
+  }
+  body main .ost_gallery .ost_gallery_wrap .backgroundBox {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  body main .ost_gallery .ost_gallery_wrap .backgroundBox .ost {
+    padding: 5.5556vw 5.5556vw 8.3333vw;
+    overflow: hidden;
+  }
+  body main .ost_gallery .ost_gallery_wrap .backgroundBox .ost .ostNamebox {
+    overflow: hidden;
+  }
+  body main .ost_gallery .ost_gallery_wrap .backgroundBox .ost .ostNamebox h2 {
+    color: white;
+  }
+  body main .ost_gallery .ost_gallery_wrap .backgroundBox .ost .ostList {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0px;
+  }
+  body main .ost_gallery .ost_gallery_wrap .backgroundBox .ost .ostList .ostItem {
+    width: 30%;
+    display: flex;
+    align-items: flex-end;
+  }
+  body main .ost_gallery .ost_gallery_wrap .backgroundBox .ost .ostList .ostItem a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+  }
+  body main .ost_gallery .ost_gallery_wrap .backgroundBox .ost .ostList .ostItem a img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    -o-object-fit: cover;
+       object-fit: cover;
+    transition: all 0.8s;
+  }
+  body main .ost_gallery .ost_gallery_wrap .backgroundBox .ost .ostList .ostItem a p {
+    display: block;
+    padding-top: 5.5556vw;
+    font-family: PretenRegular;
+    font-weight: 400;
+    font-size: 3.8889vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  body main .ost_gallery .ost_gallery_wrap .backgroundBox .ost .ostList .ostItem a:hover img {
+    transform: scaleX(-1);
+  }
+  body main .ost_gallery .ost_gallery_wrap .backgroundBox .ost .ostList .ostItem:nth-child(4) {
+    display: none;
+  }
+  body main .ost_gallery .ost_gallery_wrap .backgroundBox .gallery {
+    width: 100%;
+    overflow: hidden;
+  }
+  body main .ost_gallery .ost_gallery_wrap .backgroundBox .gallery .galleryNamebox {
+    overflow: hidden;
+  }
+  body main .ost_gallery .ost_gallery_wrap .backgroundBox .gallery .galleryNamebox h2 {
+    color: white;
+  }
+  body main .ost_gallery .ost_gallery_wrap .backgroundBox .gallery .swiperBox {
+    width: 100%;
+    height: 55.5556vw;
+    padding-bottom: 8.3333vw;
+    position: relative;
+  }
+  body main .ost_gallery .ost_gallery_wrap .backgroundBox .gallery .swiperBox .swiper-button-prev {
+    color: red;
+    width: 10%;
+  }
+  body main .ost_gallery .ost_gallery_wrap .backgroundBox .gallery .swiperBox .swiper-button-next {
+    color: red;
+    width: 10%;
+  }
+  body main .ost_gallery .ost_gallery_wrap .backgroundBox .gallery .swiperBox .swiper-pagination {
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  body main .ost_gallery .ost_gallery_wrap .backgroundBox .gallery .swiperBox .swiper-horizontal > .swiper-pagination-progressbar,
+  body main .ost_gallery .ost_gallery_wrap .backgroundBox .gallery .swiperBox .swiper-pagination-progressbar.swiper-pagination-horizontal,
+  body main .ost_gallery .ost_gallery_wrap .backgroundBox .gallery .swiperBox .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite,
+  body main .ost_gallery .ost_gallery_wrap .backgroundBox .gallery .swiperBox .swiper-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+    bottom: 0;
+    top: auto;
+  }
+  body main .ost_gallery .ost_gallery_wrap .backgroundBox .gallery .swiperBox .swiper-horizontal > .swiper-pagination-progressbar .swiper-pagination-progressbar-fill,
+  body main .ost_gallery .ost_gallery_wrap .backgroundBox .gallery .swiperBox .swiper-pagination-progressbar.swiper-pagination-horizontal .swiper-pagination-progressbar-fill,
+  body main .ost_gallery .ost_gallery_wrap .backgroundBox .gallery .swiperBox .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite .swiper-pagination-progressbar-fill,
+  body main .ost_gallery .ost_gallery_wrap .backgroundBox .gallery .swiperBox .swiper-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite .swiper-pagination-progressbar-fill {
+    background-color: red;
+  }
+  body main .ost_gallery .ost_gallery_wrap .backgroundBox .gallery .swiperBox .swiper {
+    width: 80%;
+    height: 100%;
+  }
+  body main .ost_gallery .ost_gallery_wrap .backgroundBox .gallery .swiperBox .swiper .swiper-wrapper {
+    padding-bottom: 4%;
+  }
+  body main .ost_gallery .ost_gallery_wrap .backgroundBox .gallery .swiperBox .swiper .swiper-wrapper .swiper-slide {
+    width: 83.3333vw;
+    background-color: #fff;
+    text-align: center;
+    font-size: 5vw;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body main .ost_gallery .ost_gallery_wrap .backgroundBox .gallery .swiperBox .swiper .swiper-wrapper .swiper-slide a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+  }
+  body main .ost_gallery .ost_gallery_wrap .backgroundBox .gallery .swiperBox .swiper .swiper-wrapper .swiper-slide:nth-child(1) a {
+    background-image: url("../image/dum2/gallery1.jpg");
+  }
+  body main .ost_gallery .ost_gallery_wrap .backgroundBox .gallery .swiperBox .swiper .swiper-wrapper .swiper-slide:nth-child(2) a {
+    background-image: url("../image/dum2/gallery2.jpg");
+  }
+  body main .ost_gallery .ost_gallery_wrap .backgroundBox .gallery .swiperBox .swiper .swiper-wrapper .swiper-slide:nth-child(3) a {
+    background-image: url("../image/dum2/gallery3.jpg");
+  }
+  body main .ost_gallery .ost_gallery_wrap .backgroundBox .gallery .swiperBox .swiper .swiper-wrapper .swiper-slide:nth-child(4) a {
+    background-image: url("../image/dum2/gallery4.jpg");
+  }
+  body main .ost_gallery .ost_gallery_wrap .backgroundBox .gallery .swiperBox .swiper .swiper-wrapper .swiper-slide:nth-child(5) a {
+    background-image: url("../image/dum2/gallery5.jpg");
+  }
+  body main .ost_gallery .ost_gallery_wrap .backgroundBox .gallery .swiperBox .swiper .swiper-wrapper .swiper-slide:nth-child(6) a {
+    background-image: url("../image/dum2/gallery6.jpg");
+  }
+  body main .ost_gallery .ost_gallery_wrap .backgroundBox .gallery .swiperBox .swiper .swiper-wrapper .swiper-slide:nth-child(7) a {
+    background-image: url("../image/dum2/gallery7.jpg");
+  }
+  body main .ost_gallery .ost_gallery_wrap .backgroundBox .gallery .swiperBox .swiper .swiper-wrapper .swiper-slide:nth-child(8) a {
+    background-image: url("../image/dum2/gallery8.jpg");
+  }
+  body main .ost_gallery .ost_gallery_wrap .backgroundBox .gallery .swiperBox .swiper .swiper-wrapper .swiper-slide:nth-child(9) a {
+    background-image: url("../image/dum2/gallery9.jpg");
+  }
+  body main .ost_gallery .ost_gallery_wrap .backgroundBox .gallery .moreBox {
+    text-align: center;
+    padding: 5.5556vw 0;
+  }
+  body main .ost_gallery .ost_gallery_wrap .backgroundBox .gallery .moreBox a {
+    text-decoration: none;
+    font-family: PretenRegular;
+    font-weight: 400;
+    font-size: 4.4444vw;
     color: white;
   }
 }/*# sourceMappingURL=index.css.map */
