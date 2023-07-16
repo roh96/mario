@@ -723,4 +723,146 @@ body .wrap .content .sectionWrap .ost .ostContainer .lowerOstList li .ostTxtBox 
     font-size: 1.25rem;
     word-break: break-all;
   }
+}
+@media (min-width: 360px) and (max-width: 719px) {
+  h2 {
+    font-size: 56px;
+  }
+  body .wrap .content {
+    width: 100%;
+  }
+  body .wrap .content .subMain {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  body .wrap .content .subMain img {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    -o-object-fit: cover;
+       object-fit: cover;
+    z-index: -1;
+  }
+  body .wrap .content .subMain .pageName {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    bottom: 40%;
+    transform: translate(-50%, -50%);
+  }
+  body .wrap .content .subMain .scrollBtn {
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translateX(-50%);
+  }
+  body .wrap .content .subMain .scrollBtn button {
+    border: 0;
+    background-color: transparent;
+    display: block;
+    font-size: 5.5556vw;
+    color: white;
+    animation: scrollBig 1s infinite alternate;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  body .wrap .content .sectionWrap {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  body .wrap .content .sectionWrap .ost {
+    margin: 0 auto;
+    padding: 8.3333vw 5.5556vw 0;
+    color: white;
+  }
+  body .wrap .content .sectionWrap .ost h3 {
+    position: relative;
+    padding-bottom: 8.3333vw;
+    font-size: 11.1111vw;
+  }
+  body .wrap .content .sectionWrap .ost h3:before {
+    content: "";
+    position: absolute;
+    top: 12.5vw;
+    left: 0;
+    border: 2px solid red;
+    width: 19.4444vw;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer {
+    padding-bottom: 0px;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .upperOstList {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .upperOstList li {
+    display: block;
+    width: 100%;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .upperOstList li .ostVideo {
+    width: 100%;
+    height: 55.5556vw;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .upperOstList li .ostVideo iframe {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .upperOstList li .ostTxtBox {
+    width: 100%;
+    padding-bottom: 13.8889vw;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .upperOstList li .ostTxtBox .ostTitle {
+    width: 100%;
+    padding-top: 2.7778vw;
+    font-size: 5.5556vw;
+    line-height: 1.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .upperOstList li .ostTxtBox p {
+    width: 100%;
+    padding-top: 2.7778vw;
+    font-size: 4.4444vw;
+    word-break: keep-all;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .lowerOstList {
+    padding-top: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .lowerOstList li {
+    display: block;
+    width: 100%;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .lowerOstList li .ostVideo {
+    width: 100%;
+    height: 55.5556vw;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .lowerOstList li .ostVideo iframe {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .lowerOstList li .ostTxtBox {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .lowerOstList li .ostTxtBox .ostTitle {
+    width: 100%;
+    padding-top: 2.7778vw;
+    font-size: 5.5556vw;
+    line-height: 1.5;
+  }
+  body .wrap .content .sectionWrap .ost .ostContainer .lowerOstList li .ostTxtBox p {
+    width: 100%;
+    padding-top: 2.7778vw;
+    font-size: 4.4444vw;
+    word-break: break-all;
+  }
 }/*# sourceMappingURL=ost.css.map */

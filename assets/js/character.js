@@ -27,3 +27,11 @@ $(document).ready(function () {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 });
+
+//버거버튼
+const burger = document.querySelector(".mobileGnb");
+const mobilenav = document.querySelector(".gnbList");
+
+burger.onclick = function () {
+  mobilenav.classList.toggle("burgeron");
+};

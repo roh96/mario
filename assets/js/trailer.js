@@ -32,7 +32,14 @@ $(document).ready(function () {
     slidesPerView: 6,
     freeMode: true,
     watchSlidesProgress: true,
+    pagination: {
+      el: ".swiper-pagination",
+      type: "progressbar",
+    },
     breakpoints: {
+      360: {
+        slidesPerView: 2,
+      },
       720: {
         slidesPerView: 4,
       },
@@ -137,3 +144,11 @@ $(document).ready(function () {
     );
   });
 });
+
+//버거버튼
+const burger = document.querySelector(".mobileGnb");
+const mobilenav = document.querySelector(".gnbList");
+
+burger.onclick = function () {
+  mobilenav.classList.toggle("burgeron");
+};

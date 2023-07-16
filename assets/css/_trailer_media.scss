@@ -119,6 +119,17 @@
                     }
                   }
                 }
+                .swiper-horizontal > .swiper-pagination-progressbar,
+                .swiper-pagination-progressbar.swiper-pagination-horizontal,
+                .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite,
+                .swiper-vertical
+                  > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+                  bottom: 0;
+                  top: auto;
+                  .swiper-pagination-progressbar-fill {
+                    background-color: red;
+                  }
+                }
               }
             }
           }
@@ -246,6 +257,159 @@
                       height: 100%;
                       object-fit: cover;
                     }
+                  }
+                }
+                .swiper-horizontal > .swiper-pagination-progressbar,
+                .swiper-pagination-progressbar.swiper-pagination-horizontal,
+                .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite,
+                .swiper-vertical
+                  > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+                  bottom: 0;
+                  top: auto;
+                  .swiper-pagination-progressbar-fill {
+                    background-color: red;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 360px) and (max-width: 719px) {
+  h2 {
+    font-size: 56px;
+  }
+
+  body {
+    .wrap {
+      .content {
+        width: 100%;
+        .subMain {
+          width: 100%;
+          height: 100vh;
+          position: relative;
+          img {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            object-fit: cover;
+            z-index: -1;
+          }
+          .pageName {
+            display: inline-block;
+            position: absolute;
+            left: 50%;
+            // top: 111.1111vw;
+            bottom: 40%;
+            transform: translate(-50%, -50%);
+          }
+          .scrollBtn {
+            position: absolute;
+            left: 50%;
+            // top: 152.7778vw;
+            bottom: 20%;
+            transform: translateX(-50%);
+            button {
+              border: 0;
+              background-color: transparent;
+              display: block;
+              font-size: 5.5556vw;
+              color: white;
+              animation: scrollBig 1s infinite alternate;
+              cursor: pointer;
+              white-space: nowrap;
+            }
+          }
+        }
+        .sectionWrap {
+          background-color: rgba(0, 0, 0, 0.5);
+          .trailer {
+            margin: 0 auto;
+            padding: 8.3333vw 5.5556vw;
+            color: white;
+            h3 {
+              position: relative;
+              padding-bottom: 8.3333vw;
+              font-size: 11.1111vw;
+              &:before {
+                content: "";
+                position: absolute;
+                top: 12.5vw;
+                left: 0;
+                border: 2px solid red;
+                width: 19.4444vw;
+              }
+            }
+            .swiperWrap {
+              width: 100%;
+              // height: 800px;
+              //위 큰스와이퍼
+              .mySwiper2 {
+                height: 50vw;
+                width: 100%;
+                .swiper-wrapper {
+                  .swiper-slide {
+                    // text-align: center;
+                    // font-size: 18px;
+                    // background: #fff;
+                    // display: flex;
+                    // justify-content: center;
+                    // align-items: center;
+                    // background-size: cover;
+                    // background-position: center;
+                    .videobox {
+                      position: relative;
+                      width: 100%;
+                      padding-bottom: 56.25%;
+                      iframe {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                      }
+                    }
+                    // img {
+                    //   display: block;
+                    //   width: 100%;
+                    //   height: 100%;
+                    //   object-fit: cover;
+                    // }
+                  }
+                }
+              }
+              //아래작은스와이퍼
+              .mySwiper {
+                height: 33.3333vw;
+                box-sizing: border-box;
+                padding: 4.1667vw 0;
+                .swiper-wrapper {
+                  display: flex;
+                  justify-content: space-between;
+                  .swiper-slide {
+                    height: 100%;
+                    background-size: cover;
+                    background-position: center;
+                    cursor: pointer;
+
+                    img {
+                      display: block;
+                      width: 100%;
+                      height: 100%;
+                      object-fit: cover;
+                    }
+                  }
+                }
+                .swiper-horizontal > .swiper-pagination-progressbar,
+                .swiper-pagination-progressbar.swiper-pagination-horizontal,
+                .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite,
+                .swiper-vertical
+                  > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+                  bottom: 0;
+                  top: auto;
+                  .swiper-pagination-progressbar-fill {
+                    background-color: red;
                   }
                 }
               }

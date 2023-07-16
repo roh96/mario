@@ -120,6 +120,19 @@ body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-wrapper 
   -o-object-fit: cover;
      object-fit: cover;
 }
+body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-horizontal > .swiper-pagination-progressbar,
+body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-pagination-progressbar.swiper-pagination-horizontal,
+body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite,
+body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+  bottom: 0;
+  top: auto;
+}
+body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-horizontal > .swiper-pagination-progressbar .swiper-pagination-progressbar-fill,
+body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-pagination-progressbar.swiper-pagination-horizontal .swiper-pagination-progressbar-fill,
+body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite .swiper-pagination-progressbar-fill,
+body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite .swiper-pagination-progressbar-fill {
+  background-color: red;
+}
 
 @media (min-width: 1024px) and (max-width: 1279px) {
   h2 {
@@ -224,6 +237,19 @@ body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-wrapper 
     -o-object-fit: cover;
        object-fit: cover;
   }
+  body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-horizontal > .swiper-pagination-progressbar,
+  body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-pagination-progressbar.swiper-pagination-horizontal,
+  body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite,
+  body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+    bottom: 0;
+    top: auto;
+  }
+  body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-horizontal > .swiper-pagination-progressbar .swiper-pagination-progressbar-fill,
+  body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-pagination-progressbar.swiper-pagination-horizontal .swiper-pagination-progressbar-fill,
+  body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite .swiper-pagination-progressbar-fill,
+  body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite .swiper-pagination-progressbar-fill {
+    background-color: red;
+  }
 }
 @media (min-width: 720px) and (max-width: 1023px) {
   h2 {
@@ -327,5 +353,135 @@ body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-wrapper 
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-horizontal > .swiper-pagination-progressbar,
+  body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-pagination-progressbar.swiper-pagination-horizontal,
+  body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite,
+  body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+    bottom: 0;
+    top: auto;
+  }
+  body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-horizontal > .swiper-pagination-progressbar .swiper-pagination-progressbar-fill,
+  body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-pagination-progressbar.swiper-pagination-horizontal .swiper-pagination-progressbar-fill,
+  body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite .swiper-pagination-progressbar-fill,
+  body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite .swiper-pagination-progressbar-fill {
+    background-color: red;
+  }
+}
+@media (min-width: 360px) and (max-width: 719px) {
+  h2 {
+    font-size: 56px;
+  }
+  body .wrap .content {
+    width: 100%;
+  }
+  body .wrap .content .subMain {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  body .wrap .content .subMain img {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    -o-object-fit: cover;
+       object-fit: cover;
+    z-index: -1;
+  }
+  body .wrap .content .subMain .pageName {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    bottom: 40%;
+    transform: translate(-50%, -50%);
+  }
+  body .wrap .content .subMain .scrollBtn {
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translateX(-50%);
+  }
+  body .wrap .content .subMain .scrollBtn button {
+    border: 0;
+    background-color: transparent;
+    display: block;
+    font-size: 5.5556vw;
+    color: white;
+    animation: scrollBig 1s infinite alternate;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  body .wrap .content .sectionWrap {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  body .wrap .content .sectionWrap .trailer {
+    margin: 0 auto;
+    padding: 8.3333vw 5.5556vw;
+    color: white;
+  }
+  body .wrap .content .sectionWrap .trailer h3 {
+    position: relative;
+    padding-bottom: 8.3333vw;
+    font-size: 11.1111vw;
+  }
+  body .wrap .content .sectionWrap .trailer h3:before {
+    content: "";
+    position: absolute;
+    top: 12.5vw;
+    left: 0;
+    border: 2px solid red;
+    width: 19.4444vw;
+  }
+  body .wrap .content .sectionWrap .trailer .swiperWrap {
+    width: 100%;
+  }
+  body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper2 {
+    height: 50vw;
+    width: 100%;
+  }
+  body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper2 .swiper-wrapper .swiper-slide .videobox {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+  }
+  body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper2 .swiper-wrapper .swiper-slide .videobox iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper {
+    height: 33.3333vw;
+    box-sizing: border-box;
+    padding: 4.1667vw 0;
+  }
+  body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-wrapper .swiper-slide {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+  }
+  body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-wrapper .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-horizontal > .swiper-pagination-progressbar,
+  body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-pagination-progressbar.swiper-pagination-horizontal,
+  body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite,
+  body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+    bottom: 0;
+    top: auto;
+  }
+  body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-horizontal > .swiper-pagination-progressbar .swiper-pagination-progressbar-fill,
+  body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-pagination-progressbar.swiper-pagination-horizontal .swiper-pagination-progressbar-fill,
+  body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite .swiper-pagination-progressbar-fill,
+  body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite .swiper-pagination-progressbar-fill {
+    background-color: red;
   }
 }/*# sourceMappingURL=trailer.css.map */

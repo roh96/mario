@@ -583,3 +583,218 @@
     }
   }
 }
+@media (min-width: 360px) and (max-width: 719px) {
+  h2 {
+    font-size: 56px;
+  }
+  .content {
+    width: 100%;
+    .subMain {
+      width: 100%;
+      height: 100vh;
+      position: relative;
+      img {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        object-fit: cover;
+        z-index: -1;
+      }
+      .pageName {
+        display: inline-block;
+        position: absolute;
+        left: 50%;
+        // top: 111.1111vw;
+        bottom: 40%;
+        transform: translate(-50%, -50%);
+      }
+      .scrollBtn {
+        position: absolute;
+        left: 50%;
+        // top: 152.7778vw;
+        bottom: 20%;
+        transform: translateX(-50%);
+        button {
+          border: 0;
+          background-color: transparent;
+          display: block;
+          font-size: 5.5556vw;
+          color: white;
+          animation: scrollBig 1s infinite alternate;
+          cursor: pointer;
+          white-space: nowrap;
+        }
+      }
+    }
+    .sectionWrap {
+      background-color: rgba(0, 0, 0, 0.9);
+      .character {
+        // width: 100%;
+        padding: 8.3333vw 5.5556vw 0;
+        margin: 0 auto;
+        .mario {
+          position: relative;
+          .marioPng {
+            position: absolute;
+            top: -50px;
+            left: 50px;
+            width: 20%;
+            display: none;
+            img {
+              width: 200px;
+            }
+          }
+          .marioTxt {
+            float: none;
+            width: 100%;
+            h3 {
+              font-size: 11.1111vw;
+              padding-bottom: 5.5556vw;
+            }
+            p {
+              font-size: 3.8889vw;
+            }
+          }
+          .marioImg {
+            display: flex;
+            justify-content: space-between;
+            overflow: hidden;
+            clear: both;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            padding-bottom: 13.8889vw;
+            li {
+              padding: 0;
+              width: 48%;
+              height: 27.7778vw;
+              text-align: center;
+              &:nth-child(1) {
+                padding-top: 8.3333vw;
+                padding-bottom: 4.1667vw;
+                width: 100%;
+                height: 61.1111vw;
+              }
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+        .peach {
+          position: relative;
+          .peachPng {
+            position: absolute;
+            top: -50px;
+            right: 100px;
+            width: 15%;
+            display: none;
+            img {
+              width: 200px;
+            }
+          }
+          .peachTxt {
+            width: 100%;
+            h3 {
+              font-size: 11.1111vw;
+              padding-bottom: 5.5556vw;
+            }
+            p {
+              font-size: 3.8889vw;
+            }
+          }
+          .peachImg {
+            display: flex;
+            justify-content: space-between;
+            overflow: hidden;
+            clear: both;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            li {
+              padding-top: 0px;
+              width: 48%;
+              text-align: center;
+              height: 27.7778vw;
+              &:nth-child(1) {
+                padding-top: 8.3333vw;
+                padding-bottom: 4.1667vw;
+                width: 100%;
+                height: 61.1111vw;
+              }
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+        .subCharacter {
+          width: 100%;
+          padding-top: 13.8889vw;
+          dt {
+            font-size: 11.1111vw;
+            padding-bottom: 5.5556vw;
+          }
+          dd {
+            font-size: 3.8889vw;
+            display: block;
+            padding-bottom: 0px;
+          }
+          .subCharacterList {
+            display: flex;
+            flex-wrap: wrap;
+            li {
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+              padding-bottom: 13.8889vw;
+              dl {
+                width: 51.3889vw;
+                word-break: keep-all;
+              }
+              div {
+                width: 37.5vw;
+                height: 111.1111vw;
+                img {
+                  display: block;
+                  margin: 0 auto;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: contain;
+                }
+              }
+            }
+          }
+        }
+        .others {
+          width: 100%;
+          padding: 0 0 13.8889vw;
+          .othersCharacter {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            li {
+              width: 48%;
+              height: 27.7778vw;
+              &:nth-child(1) {
+                padding-top: 0px;
+                padding-bottom: 4.1667vw;
+                width: 100%;
+                height: 41.6667vw;
+              }
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
