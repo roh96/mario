@@ -69,54 +69,6 @@ $(document).ready(function () {
   //     );
   // });
 
-  const thumbCl = document.querySelectorAll(
-    ".mySwiper .swiper-wrapper .swiper-slide"
-  );
-  const videoPl = document.querySelectorAll(
-    ".mySwiper2 .swiper-wrapper .swiper-slide"
-  );
-
-  // thumbCl.forEach(function (cont, key) {
-  // cont.onclick = function () {
-  // console.log(thumbCl);
-  // console.log(videoPl[key].children[0].innerHTML);
-  // videoPl[key].children
-  // contentWindow.postMessage(
-  //   '{"event":"command","func":"' + "pauseVideo" + '","args":""}',
-  //   "*"
-  // );
-  // not.videoPl[key]
-  //   .$(".videobox iframe")
-  //   .contentWindow.postMessage(
-  //     '{"event":"command","func":"' + "pauseVideo" + '","args":""}',
-  //     "*"
-  //   );
-  // };
-  // });
-
-  // thumbCl.addEventListener("click", function (e) {
-  //   thumbCl.forEach(function (cont, key) {
-  //     not.videoPl[key]
-  //       .$(".videobox iframe")
-  //       .contentWindow.postMessage(
-  //         '{"event":"command","func":"' + "pauseVideo" + '","args":""}',
-  //         "*"
-  //       );
-  //   });
-  // });
-
-  // const clickImg = document.querySelector(".mySwiper");
-  // const ifr = document.querySelector("#iframe");
-  // function pauseV(e) {
-  //   console.log("ddf");
-  //   pauseVideo();
-  // }
-
-  // clickImg.addEventListener("click", function (e) {
-  //   console.log(ifr);
-  //   pauseV(ifr);
-  // });
-
   $(".mySwiper").click(function () {
     $(".youtube-video1")[0].contentWindow.postMessage(
       '{"event":"command","func":"' + "pauseVideo" + '","args":""}',
@@ -152,3 +104,17 @@ const mobilenav = document.querySelector(".gnbList");
 burger.onclick = function () {
   mobilenav.classList.toggle("burgeron");
 };
+
+//mobile trailer video
+const thumb = document.querySelector(".mySwiper");
+const mobile = document.querySelector(".mySwiper2");
+
+thumb.onclick = function () {
+  mobile.classList.add("videoOn");
+};
+
+$(".mySwiper2").click(function (e) {
+  if ($(".swiper-wrapper").has(e.target).length === 0) {
+    mobile.classList.remove("videoOn");
+  }
+});

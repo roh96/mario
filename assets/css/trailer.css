@@ -88,6 +88,9 @@ body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper2 {
   height: 80%;
   width: 100%;
 }
+body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper2 .closeVideo {
+  display: none;
+}
 body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper2 .swiper-wrapper .swiper-slide .videobox {
   position: relative;
   width: 100%;
@@ -370,10 +373,11 @@ body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-vertical
 }
 @media (min-width: 360px) and (max-width: 719px) {
   h2 {
-    font-size: 56px;
+    font-size: 13.3333vw;
   }
   body .wrap .content {
     width: 100%;
+    position: relative;
   }
   body .wrap .content .subMain {
     width: 100%;
@@ -436,8 +440,45 @@ body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-vertical
     width: 100%;
   }
   body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper2 {
-    height: 50vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
     width: 100%;
+    background-color: rgba(40, 47, 61, 0.9);
+    z-index: 300;
+    display: none;
+  }
+  body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper2 .closeVideo {
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    border: 0;
+    background-color: transparent;
+    width: 24px;
+    height: 24px;
+  }
+  body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper2 .closeVideo span {
+    border: 1px solid white;
+    width: 33.9411px;
+    display: block;
+    position: absolute;
+  }
+  body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper2 .closeVideo span:nth-child(1) {
+    transform: translateY(-50%) rotate(45deg);
+    top: 50%;
+  }
+  body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper2 .closeVideo span:nth-child(2) {
+    transform: translateY(50%) rotate(135deg);
+    bottom: 50%;
+  }
+  body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper2 .swiper-wrapper {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 50%;
+    transform: translateY(-50%);
   }
   body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper2 .swiper-wrapper .swiper-slide .videobox {
     position: relative;
@@ -483,5 +524,8 @@ body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-vertical
   body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite .swiper-pagination-progressbar-fill,
   body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite .swiper-pagination-progressbar-fill {
     background-color: red;
+  }
+  body .wrap .content .sectionWrap .trailer .swiperWrap .videoOn {
+    display: block;
   }
 }/*# sourceMappingURL=trailer.css.map */

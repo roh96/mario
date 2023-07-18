@@ -87,6 +87,9 @@ body {
             // height: 800px;
             //위 큰스와이퍼
             .mySwiper2 {
+              .closeVideo {
+                display: none;
+              }
               height: 80%;
               width: 100%;
               .swiper-wrapper {
