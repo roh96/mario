@@ -282,7 +282,7 @@
     }
   }
 }
-@media (min-width: 360px) and (max-width: 719px) {
+@media (max-width: 719px) {
   body {
     .header {
       position: fixed;
@@ -319,8 +319,9 @@
             right: 5.5556vw;
             position: absolute;
             display: block;
-            padding-top: 5.5556vw;
+            margin-top: 5.5556vw;
             z-index: 1;
+            cursor: pointer;
             span {
               display: block;
               border: 1px solid #fff;

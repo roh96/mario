@@ -37,7 +37,7 @@ $(document).ready(function () {
       type: "progressbar",
     },
     breakpoints: {
-      360: {
+      0: {
         slidesPerView: 2,
       },
       720: {
@@ -114,7 +114,7 @@ thumb.onclick = function () {
 };
 
 $(".mySwiper2").click(function (e) {
-  if ($(".swiper-wrapper").has(e.target).length === 0) {
+  if ($(".mySwiper2 .swiper-wrapper").has(e.target).length === 0) {
     mobile.classList.remove("videoOn");
   }
 });

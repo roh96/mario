@@ -583,7 +583,7 @@
     }
   }
 }
-@media (min-width: 360px) and (max-width: 719px) {
+@media (max-width: 719px) {
   h2 {
     font-size: 13.3333vw;
   }
@@ -598,6 +598,7 @@
         height: 100%;
         position: fixed;
         object-fit: cover;
+        object-position: 70%;
         z-index: -1;
       }
       .pageName {
@@ -612,7 +613,7 @@
         position: absolute;
         left: 50%;
         // top: 152.7778vw;
-        bottom: 20%;
+        bottom: 50vw;
         transform: translateX(-50%);
         button {
           border: 0;

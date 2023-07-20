@@ -146,6 +146,7 @@ body {
         background-position: center center;
         background-size: contain;
         cursor: pointer;
+        z-index: 999;
         .upBtnArrow {
           color: red;
           font-size: 40px;

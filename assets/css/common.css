@@ -143,6 +143,7 @@ body footer .footerArea .upBtn {
   background-position: center center;
   background-size: contain;
   cursor: pointer;
+  z-index: 999;
 }
 body footer .footerArea .upBtn .upBtnArrow {
   color: red;
@@ -438,7 +439,7 @@ body footer .copyright {
     padding-bottom: 20px;
   }
 }
-@media (min-width: 360px) and (max-width: 719px) {
+@media (max-width: 719px) {
   body .header {
     position: fixed;
     width: 100%;
@@ -475,8 +476,9 @@ body footer .copyright {
     right: 5.5556vw;
     position: absolute;
     display: block;
-    padding-top: 5.5556vw;
+    margin-top: 5.5556vw;
     z-index: 1;
+    cursor: pointer;
   }
   body .header .headerArea .gnb .mobileGnb span {
     display: block;

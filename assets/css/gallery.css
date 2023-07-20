@@ -263,7 +263,7 @@ h4 {
     height: 200px;
   }
 }
-@media (min-width: 360px) and (max-width: 719px) {
+@media (max-width: 719px) {
   h2 {
     font-size: 13.3333vw;
   }
@@ -281,6 +281,8 @@ h4 {
     position: fixed;
     -o-object-fit: cover;
        object-fit: cover;
+    -o-object-position: 66%;
+       object-position: 66%;
     z-index: -1;
   }
   .content .subMain .pageName {
@@ -293,7 +295,7 @@ h4 {
   .content .subMain .scrollBtn {
     position: absolute;
     left: 50%;
-    bottom: 20%;
+    bottom: 50vw;
     transform: translateX(-50%);
   }
   .content .subMain .scrollBtn button {

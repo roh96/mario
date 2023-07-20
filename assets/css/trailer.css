@@ -371,7 +371,7 @@ body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-vertical
     background-color: red;
   }
 }
-@media (min-width: 360px) and (max-width: 719px) {
+@media (max-width: 719px) {
   h2 {
     font-size: 13.3333vw;
   }
@@ -390,6 +390,8 @@ body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-vertical
     position: fixed;
     -o-object-fit: cover;
        object-fit: cover;
+    -o-object-position: 43%;
+       object-position: 43%;
     z-index: -1;
   }
   body .wrap .content .subMain .pageName {
@@ -402,7 +404,7 @@ body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-vertical
   body .wrap .content .subMain .scrollBtn {
     position: absolute;
     left: 50%;
-    bottom: 20%;
+    bottom: 50vw;
     transform: translateX(-50%);
   }
   body .wrap .content .subMain .scrollBtn button {
@@ -458,6 +460,7 @@ body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-vertical
     background-color: transparent;
     width: 24px;
     height: 24px;
+    cursor: pointer;
   }
   body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper2 .closeVideo span {
     border: 1px solid white;

@@ -811,7 +811,7 @@ dd {
        object-fit: cover;
   }
 }
-@media (min-width: 360px) and (max-width: 719px) {
+@media (max-width: 719px) {
   h2 {
     font-size: 13.3333vw;
   }
@@ -829,6 +829,8 @@ dd {
     position: fixed;
     -o-object-fit: cover;
        object-fit: cover;
+    -o-object-position: 70%;
+       object-position: 70%;
     z-index: -1;
   }
   .content .subMain .pageName {
@@ -841,7 +843,7 @@ dd {
   .content .subMain .scrollBtn {
     position: absolute;
     left: 50%;
-    bottom: 20%;
+    bottom: 50vw;
     transform: translateX(-50%);
   }
   .content .subMain .scrollBtn button {
