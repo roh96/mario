@@ -946,6 +946,7 @@
       .mainvideo {
         width: 100%;
         height: 100vh;
+        // min-height: 500px;
         overflow: hidden;
         position: relative;
         video {
@@ -969,7 +970,7 @@
           position: absolute;
           left: 50%;
           // top: 152.7778vw;
-          bottom: 50vw;
+          bottom: 27.7778vw;
           transform: translateX(-50%);
           button {
             border: 0;

@@ -750,13 +750,13 @@ body .wrap .content .sectionWrap .ost .ostContainer .lowerOstList li .ostTxtBox 
     display: inline-block;
     position: absolute;
     left: 50%;
-    bottom: 40%;
+    bottom: 83.3333vw;
     transform: translate(-50%, -50%);
   }
   body .wrap .content .subMain .scrollBtn {
     position: absolute;
     left: 50%;
-    bottom: 50vw;
+    bottom: 27.7778vw;
     transform: translateX(-50%);
   }
   body .wrap .content .subMain .scrollBtn button {

@@ -1373,7 +1373,7 @@ body main .ost_gallery .ost_gallery_wrap .backgroundBox .gallery .moreBox a {
   body main .mainvideo .scrollBtn {
     position: absolute;
     left: 50%;
-    bottom: 50vw;
+    bottom: 27.7778vw;
     transform: translateX(-50%);
   }
   body main .mainvideo .scrollBtn button {
