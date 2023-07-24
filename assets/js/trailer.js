@@ -115,6 +115,30 @@ thumb.onclick = function () {
 
 $(".mySwiper2").click(function (e) {
   if ($(".mySwiper2 .swiper-wrapper").has(e.target).length === 0) {
+    $(".youtube-video1")[0].contentWindow.postMessage(
+      '{"event":"command","func":"' + "pauseVideo" + '","args":""}',
+      "*"
+    );
+    $(".youtube-video2")[0].contentWindow.postMessage(
+      '{"event":"command","func":"' + "pauseVideo" + '","args":""}',
+      "*"
+    );
+    $(".youtube-video3")[0].contentWindow.postMessage(
+      '{"event":"command","func":"' + "pauseVideo" + '","args":""}',
+      "*"
+    );
+    $(".youtube-video4")[0].contentWindow.postMessage(
+      '{"event":"command","func":"' + "pauseVideo" + '","args":""}',
+      "*"
+    );
+    $(".youtube-video5")[0].contentWindow.postMessage(
+      '{"event":"command","func":"' + "pauseVideo" + '","args":""}',
+      "*"
+    );
+    $(".youtube-video6")[0].contentWindow.postMessage(
+      '{"event":"command","func":"' + "pauseVideo" + '","args":""}',
+      "*"
+    );
     mobile.classList.remove("videoOn");
   }
 });
