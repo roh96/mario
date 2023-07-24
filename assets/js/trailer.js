@@ -95,50 +95,51 @@ $(document).ready(function () {
       "*"
     );
   });
-});
 
-//버거버튼
-const burger = document.querySelector(".mobileGnb");
-const mobilenav = document.querySelector(".gnbList");
+  $(".mySwiper2").click(function (e) {
+    if ($(".mySwiper2 .swiper-wrapper").has(e.target).length === 0) {
+      console.log("dd");
 
-burger.onclick = function () {
-  mobilenav.classList.toggle("burgeron");
-};
+      $(".youtube-video1")[0].contentWindow.postMessage(
+        '{"event":"command","func":"' + "pauseVideo" + '","args":""}',
+        "*"
+      );
+      $(".youtube-video2")[0].contentWindow.postMessage(
+        '{"event":"command","func":"' + "pauseVideo" + '","args":""}',
+        "*"
+      );
+      $(".youtube-video3")[0].contentWindow.postMessage(
+        '{"event":"command","func":"' + "pauseVideo" + '","args":""}',
+        "*"
+      );
+      $(".youtube-video4")[0].contentWindow.postMessage(
+        '{"event":"command","func":"' + "pauseVideo" + '","args":""}',
+        "*"
+      );
+      $(".youtube-video5")[0].contentWindow.postMessage(
+        '{"event":"command","func":"' + "pauseVideo" + '","args":""}',
+        "*"
+      );
+      $(".youtube-video6")[0].contentWindow.postMessage(
+        '{"event":"command","func":"' + "pauseVideo" + '","args":""}',
+        "*"
+      );
+      mobile.classList.remove("videoOn");
+    }
+  });
+  //버거버튼
+  const burger = document.querySelector(".mobileGnb");
+  const mobilenav = document.querySelector(".gnbList");
 
-//mobile trailer video
-const thumb = document.querySelector(".mySwiper");
-const mobile = document.querySelector(".mySwiper2");
+  burger.onclick = function () {
+    mobilenav.classList.toggle("burgeron");
+  };
 
-thumb.onclick = function () {
-  mobile.classList.add("videoOn");
-};
+  //mobile trailer video
+  const thumb = document.querySelector(".mySwiper");
+  const mobile = document.querySelector(".mySwiper2");
 
-$(".mySwiper2").click(function (e) {
-  if ($(".mySwiper2 .swiper-wrapper").has(e.target).length === 0) {
-    $(".youtube-video1")[0].contentWindow.postMessage(
-      '{"event":"command","func":"' + "pauseVideo" + '","args":""}',
-      "*"
-    );
-    $(".youtube-video2")[0].contentWindow.postMessage(
-      '{"event":"command","func":"' + "pauseVideo" + '","args":""}',
-      "*"
-    );
-    $(".youtube-video3")[0].contentWindow.postMessage(
-      '{"event":"command","func":"' + "pauseVideo" + '","args":""}',
-      "*"
-    );
-    $(".youtube-video4")[0].contentWindow.postMessage(
-      '{"event":"command","func":"' + "pauseVideo" + '","args":""}',
-      "*"
-    );
-    $(".youtube-video5")[0].contentWindow.postMessage(
-      '{"event":"command","func":"' + "pauseVideo" + '","args":""}',
-      "*"
-    );
-    $(".youtube-video6")[0].contentWindow.postMessage(
-      '{"event":"command","func":"' + "pauseVideo" + '","args":""}',
-      "*"
-    );
-    mobile.classList.remove("videoOn");
-  }
+  thumb.onclick = function () {
+    mobile.classList.add("videoOn");
+  };
 });
