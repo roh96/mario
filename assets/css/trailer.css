@@ -445,11 +445,10 @@ body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-vertical
     position: fixed;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 0px;
     width: 100%;
     background-color: rgba(40, 47, 61, 0.9);
     z-index: 300;
-    display: none;
   }
   body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper2 .closeVideo {
     display: block;
@@ -492,6 +491,7 @@ body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-vertical
     position: absolute;
     width: 100%;
     height: 100%;
+    z-index: 999;
   }
   body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper {
     height: 33.3333vw;
@@ -529,6 +529,6 @@ body .wrap .content .sectionWrap .trailer .swiperWrap .mySwiper .swiper-vertical
     background-color: red;
   }
   body .wrap .content .sectionWrap .trailer .swiperWrap .videoOn {
-    display: block;
+    height: 100vh;
   }
 }/*# sourceMappingURL=trailer.css.map */
